@@ -1,18 +1,3 @@
-<nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(&quot;assets/img/graditen.png&quot;);height: 56px;padding: 29px;margin: 0;">
-        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <img
-                src="assets/img/shadow.png" style="width: 124px;margin-right: 5px;padding-top: 57px;">
-                <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 952px;padding: 109px;margin: 0;">
-                    <ul class="nav navbar-nav text-uppercase">
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#services" style="margin-right: 20px;">beranda</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio" style="margin-right: 20px;">galeri</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about" style="margin-right: 20px;">produk dan jasa</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team" style="margin-right: 20px;">karir</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" style="margin-right: 20px;">about</a></li>
-                    </ul>
-                </div>
-        </div>
-    </nav>
     <section class="about-us">
         <div class="row">
             <div class="col" style="color: rgb(0,0,0);">

@@ -95,7 +95,7 @@
             <div class="intro">
                 <h2 class="text-center" style="margin-bottom: -5px;">Tata Cara Pemesanan</h2>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#" style="margin-bottom: -31px;">Lihat disini!</a></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="<?= base_url('tata_cara') ?>" style="margin-bottom: -31px;">Lihat disini!</a></div>
         </div>
     </div>
     <div class="features-clean">
@@ -138,7 +138,7 @@
                 <h2 class="text-center">Tentang Kami</h2>
                 <p class="text-center"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore ab sequi delectus. Consequatur eos similique, harum at laudantium eveniet asperiores, tenetur, quae quis dicta debitis illo voluptas nulla numquam!<br><br></p>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Selanjutnya</a></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="<?= base_url('about') ?>">Selanjutnya</a></div>
         </div>
     </div>
     <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">

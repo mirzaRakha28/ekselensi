@@ -4,7 +4,7 @@
 
         public function index(){
             $this->load->view('templates/header');
-            $this->load->view('product_jasa');
+            $this->load->view('tata_cara');
             $this->load->view('templates/footer');
         }
 
