@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>ekselensi</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
@@ -42,7 +42,7 @@
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(&quot;assets/img/graditen.png&quot;);height: 56px;padding: 29px;margin: 0;">
         <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <img
-                src="<?= base_url('assets/img/logo1.png')?>" style="width: 127px;">
+                src="assets/img/ekslen.png" style="width: 127px;">
                 <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 937px;padding: 109px;margin: 0;height: 61px;padding-bottom: 0px;padding-top: 0px;">
                     <ul class="nav navbar-nav text-uppercase">
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Beranda</a></li>
@@ -62,15 +62,6 @@
                 </div>
         </div>
     </nav>
-
-
-
-
-
-
-
-
-
 
 
 
