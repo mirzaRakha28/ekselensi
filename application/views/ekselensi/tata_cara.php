@@ -1,7 +1,7 @@
 <img src="assets/img/test3.png" style="width: 1500;max-width: 100%;min-width: 100%;">
     <div class="container" style="margin-top: 17px;">
         <div class="row">
-            <div class="col">
+            <div class="col mt-5">
                 <h1>Tata Cara Pemesanan</h1>
             </div>
         </div>

@@ -28,7 +28,7 @@
                 <div class="col-md-4 footer-about">
                     <h4>About the company</h4>
                     <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
-                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube-play"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="text-danger fa fa-youtube-play"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
             </div>
         </footer>
