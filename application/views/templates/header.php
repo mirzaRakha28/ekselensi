@@ -70,10 +70,10 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">GALERI</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">KARIR</a></li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">EKSEleNSI</a>
-                            <div class="dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;"><a class="dropdown-item" role="presentation">sEKILAS INFO</a><a class="dropdown-item" role="presentation" href="#">VISI DAN MISI</a><a class="dropdown-item" role="presentation" href="#">tATA NILAI BISNIS</a><a class="dropdown-item"
-                                    role="presentation" href="#">sTRUKTUR</a></div>
+                            <div class="dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;"><a class="dropdown-item" role="presentation">sEKILAS INFO</a><a class="dropdown-item" role="presentation" href="#">VISI DAN MISI</a><a class="dropdown-item" role="presentation" href="#">TATA NILAI BISNIS</a><a class="dropdown-item"
+                                    role="presentation" href="#">STRUKTUR</a></div>
                         </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fas fa-calculator" style="font-size: 20px;"></i></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('/cart/') ?>"><i class="fas fa-calculator" style="font-size: 20px;"></i></a></li>
                     </ul>
                 </div>
         </div>
