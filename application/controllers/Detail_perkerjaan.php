@@ -7,8 +7,6 @@
             $this->load->view('detail_perkerjaan');
             $this->load->view('templates/footer');
         }
-
-
     }
 
 

@@ -51,10 +51,12 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(&quot;assets/img/graditen.png&quot;);height: 56px;padding: 29px;margin: 0;">
         <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <a href="<?= base_url('#')?>"><img src="assets/img/ekslen.png"  style="width: 127px;"></a>
+            <a href="<?= base_url('')?>">
+                 <img src="<?= base_url()?>assets/img/ekslen.png"  style="width: 127px;">
+            </a>
                 <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 937px;padding: 109px;margin: 0;height: 61px;padding-bottom: 0px;padding-top: 0px;">
                     <ul class="nav navbar-nav text-uppercase">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('#') ?>">Beranda</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('') ?>">Beranda</a></li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="Galeri.html">Produk dan jasa</a>
                             <div class="dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
                             <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">ouTDOOR PRINTING</a>

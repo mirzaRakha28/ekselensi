@@ -3,10 +3,12 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3></h3>
-                    <div style="margin-bottom: 50px;"><img class="float-left" src="assets/img/logo1.png" style="width: 63px;min-width: 50px;margin: 0px;margin-bottom: 0px;margin-left: 0px;margin-right: 23px;">
+                    <div style="margin-bottom: 50px;">
+                        <img class="float-left" src="<?= base_url()?>assets/img/logo1.png" style="width: 63px;min-width: 50px;margin: 0px;margin-bottom: 0px;margin-left: 0px;margin-right: 23px;">
                         <p class="d-table">PT. Ekselensi Kreasi Komunika</p>
                     </div>
-                    <div><img class="float-left" src="assets/img/logo2.png" style="width: 63px;min-width: 50px;margin: 0px;margin-bottom: 0px;margin-left: 0px;margin-right: 23px;">
+                    <div>
+                        <img class="float-left" src="<?= base_url()?>assets/img/logo2.png" style="width: 63px;min-width: 50px;margin: 0px;margin-bottom: 0px;margin-left: 0px;margin-right: 23px;">
                         <p class="d-table">CV. Ekselensi Sejahtera Amanah</p>
                     </div>
                 </div>

@@ -18,7 +18,7 @@
                 <tr>
                     <td class="text-break" style="min-width: 272px;max-width: 272px;">
                         <div class="row">
-                            <div class="col" style="width: 128px;padding-right: 0px;padding-left: 21px;"><img style="min-width: 100px;min-height: 100px;max-height: 100px;max-width: 100px;margin-left: 50px;width: 100px;height: 100px;" src="assets/img/portfolio/1-thumbnail.jpg"></div>
+                            <div class="col" style="width: 128px;padding-right: 0px;padding-left: 21px;"><img style="min-width: 100px;min-height: 100px;max-height: 100px;max-width: 100px;margin-left: 50px;width: 100px;height: 100px;" src="<?= base_url()?>assets/img/portfolio/1-thumbnail.jpg"></div>
                             <div class="col" style="padding-right: 153px;">
                                 <p style="width: 246px;font-family: Montserrat, sans-serif;margin-bottom: 0px;"><strong>Backlight Outdoor China&nbsp;</strong></p>
                                 <p><em>category : Sticker</em></p>
@@ -59,4 +59,4 @@
             <h4 class="card-title">Disclaimer</h4>
             <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
         </div>
-    </div><a class="cd-top js-cd-top cd-top--fade-out cd-top--show" style="background-image: url(&quot;assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);"></a>
+    </div><a href="https://wa.me/62882210714854" target="_blank" class="cd-top  cd-top--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);"></a>
