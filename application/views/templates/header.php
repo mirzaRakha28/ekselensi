@@ -59,7 +59,7 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('') ?>">Beranda</a></li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="<?= base_url('product_jasa') ?>">Produk dan jasa</a>
                             <div class="dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product/') ?>">ouTDOOR PRINTING</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">ouTDOOR PRINTING</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">iNDOOR pRINTING</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">eCOSOLVENT PRINTING</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">dOCUPRINTING</a>
