@@ -95,7 +95,7 @@
             <div class="intro">
                 <h2 class="text-center" style="margin-bottom: -5px;">Tata Cara Pemesanan</h2>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="<?= base_url('tata_cara') ?>" style="margin-bottom: -31px;">Lihat disini!</a></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="<?= base_url('ekselensi/tata_cara') ?>" style="margin-bottom: -31px;">Lihat disini!</a></div>
         </div>
     </div>
     <div class="features-clean">

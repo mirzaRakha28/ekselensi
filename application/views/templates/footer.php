@@ -1,5 +1,6 @@
+<a href="https://wa.me/62882210714854?text=<?= " Hello There !, I was interest to your product , Can you contact me ? because i wanna know more about yout product.^^" ?>" target="_blank" class="cd-top  cd-bottom--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);"></a>
 <footer>
-        <footer>
+        <footer id="#id">
             <div class="row">
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3></h3>

@@ -49,7 +49,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(&quot;assets/img/graditen.png&quot;);height: 56px;padding: 29px;margin: 0;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(<?= base_url('assets/img/graditen.png') ?>);height: 56px;padding: 29px;margin: 0;">
         <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <a href="<?= base_url('')?>">
                  <img src="<?= base_url()?>assets/img/ekslen.png"  style="width: 127px;">
@@ -57,23 +57,27 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 937px;padding: 109px;margin: 0;height: 61px;padding-bottom: 0px;padding-top: 0px;">
                     <ul class="nav navbar-nav text-uppercase">
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('') ?>">Beranda</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="Galeri.html">Produk dan jasa</a>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="<?= base_url('product_jasa') ?>">Produk dan jasa</a>
                             <div class="dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">ouTDOOR PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">iNDOOR pRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">eCOSOLVENT PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">dOCUPRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">OFFSET PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">DESIGN DAN MULTIMEDIA</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('more_product') ?>">MERCHANDISES</a></div>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product/') ?>">ouTDOOR PRINTING</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">iNDOOR pRINTING</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">eCOSOLVENT PRINTING</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">dOCUPRINTING</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">OFFSET PRINTING</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">DESIGN DAN MULTIMEDIA</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">MERCHANDISES</a></div>
                         </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">GALERI</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">KARIR</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">EKSEleNSI</a>
-                            <div class="dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;"><a class="dropdown-item" role="presentation">sEKILAS INFO</a><a class="dropdown-item" role="presentation" href="#">VISI DAN MISI</a><a class="dropdown-item" role="presentation" href="#">TATA NILAI BISNIS</a><a class="dropdown-item"
-                                    role="presentation" href="#">STRUKTUR</a></div>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('galeri/galeri')?>">GALERI</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('karir/karir')?>">KARIR</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="<?= base_url('about')?>">EKSEleNSI</a>
+                            <div class="dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;">
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">SEKILAS INFO</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">VISI DAN MISI</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">TATA NILAI BISNIS</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">STRUKTUR</a>
+                            </div>
                         </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('/cart/') ?>"><i class="fas fa-calculator" style="font-size: 20px;"></i></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('product/cart') ?>"><i class="fas fa-calculator" style="font-size: 20px;"></i></a></li>
                     </ul>
                 </div>
         </div>
