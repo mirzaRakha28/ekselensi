@@ -46,6 +46,40 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Swipe-Slider-7.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Testimonial-Slider-9-1.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Testimonial-Slider-9.css">
+
+    <style>
+        .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
 </head>
 
 <body>
@@ -57,20 +91,21 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 937px;padding: 109px;margin: 0;height: 61px;padding-bottom: 0px;padding-top: 0px;">
                     <ul class="nav navbar-nav text-uppercase">
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('') ?>">Beranda</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="<?= base_url('product/product_jasa') ?>">Produk dan jasa</a>
-                            <div class="dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">ouTDOOR PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">iNDOOR pRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">eCOSOLVENT PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">dOCUPRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">OFFSET PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">DESIGN DAN MULTIMEDIA</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">MERCHANDISES</a></div>
+                        <li class="nav-item dropdown"><a class="dropbtn nav-link"  aria-expanded="false" href="<?= base_url('product/product_jasa') ?>">Produk dan jasa</a>
+                            <div class=" dropdown-content dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">ouTDOOR PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">iNDOOR pRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">eCOSOLVENT PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">dOCUPRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">OFFSET PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">DESIGN DAN MULTIMEDIA</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">MERCHANDISES</a>
+                            </div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('galeri/galeri')?>">GALERI</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('karir/karir')?>">KARIR</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="<?= base_url('about')?>">EKSEleNSI</a>
-                            <div class="dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;">
+                        <li class="nav-item dropdown"><a class="dropbtn nav-link"  aria-expanded="true" href="<?= base_url('ekselensi/about')?>">EKSEleNSI</a>
+                            <div class="dropdown-content dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;">
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">SEKILAS INFO</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">VISI DAN MISI</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">TATA NILAI BISNIS</a>
