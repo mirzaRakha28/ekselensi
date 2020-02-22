@@ -1,4 +1,16 @@
+    
+    <?php
+        // if(isset($_GET['k'])){
+        //     setcookie('kategori',$_GET['k']);
+        //     // var_dump($_COOKIE['kategori']);die();
+        // }
 
+        // if(isset($_GET['sk'])){
+        //     setcookie('subKategori',$_GET['sk']);
+        // }
+
+        
+    ?>
 <!DOCTYPE html>
 <html>
 
@@ -93,13 +105,13 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('') ?>">Beranda</a></li>
                         <li class="nav-item dropdown"><a class="dropbtn nav-link"  aria-expanded="false" href="<?= base_url('product/product_jasa') ?>">Produk dan jasa</a>
                             <div class=" dropdown-content dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">ouTDOOR PRINTING</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">iNDOOR pRINTING</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">eCOSOLVENT PRINTING</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">dOCUPRINTING</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">OFFSET PRINTING</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">DESIGN DAN MULTIMEDIA</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product') ?>">MERCHANDISES</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1' ?>">ouTDOOR PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'2'  ?>">iNDOOR pRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'3'  ?>">eCOSOLVENT PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'4'  ?>">dOCUPRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">OFFSET PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">DESIGN DAN MULTIMEDIA</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">MERCHANDISES</a>
                             </div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('galeri/galeri')?>">GALERI</a></li>

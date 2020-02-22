@@ -11,14 +11,16 @@
                 </div>
             </div>
             <p></p>
-            <div class="row no-gutters" style="margin-bottom: 3px;">
+            
+            <?php foreach($produk as $brg) :?>
+                <div class="row no-gutters my-3" style="margin-bottom: 3px;">
                 <div class="col">
-                    <div class="container border-warning shadow-lg flex-grow-1" style="height: 223px;margin-bottom: 18px;max-height: auto;min-height: auto;"><img class="float-left" src="<?= base_url()?>assets/img/produk.png" style="width: auto;min-width: auto;max-width: auto;height: auto;min-height: auto;max-height: auto;">
+                    <div class="container border-warning shadow-lg flex-grow-1" style="height: auto;margin-bottom: 18px;max-height: auto;min-height: auto;"><img class="float-left" src="<?= base_url('').$brg->gambar ?>" style="width: auto;min-width: auto;max-width: auto;height: auto;min-height: auto;max-height: auto;">
                         <div class="card">
-                            <div class="card-body float-left" style="height: 150px;min-height: 150px;max-height: 150px;">
-                                <h4 class="card-title" style="margin-bottom: 1px;color: rgb(248,129,18);">Flexy China 280 gram</h4>
-                                <p class="card-text">Deskripsi bahan backlight china outdoor<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut sagittis<br></p>
-                                <p class="card-text"><strong>Harga </strong>: &nbsp;Rp188,000 per Meter Persegi<br></p>
+                            <div class="card-body float-left" style="height: auto;min-height: auto;max-height: auto;">
+                                <h4 class="card-title" style="margin-bottom: 1px;color: rgb(248,129,18);"><?= $brg->nama_produk ?></h4>
+                                <p class="card-text">Deskripsi bahan backlight china outdoor<br><?= $brg->deskripsi ?><br></p>
+                                <p class="card-text"><strong>Harga </strong>: &nbsp;Rp<?= $brg->harga ?> per Meter Persegi<br></p>
                                 <a href="<?= base_url('product/product')?>"><button class="btn btn-primary border rounded" type="button" style="margin-right: 15px;">Lihat</button></a>
                                 <a href="<?= base_url('product/product')?>">
                                 <button class="btn btn-primary border rounded" type="button"
@@ -28,6 +30,7 @@
                     </div>
                 </div>
             </div>
+            <?php endforeach?>
         </div>
     </div>
 
