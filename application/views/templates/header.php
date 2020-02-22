@@ -119,9 +119,9 @@
                         <li class="nav-item dropdown"><a class="dropbtn nav-link"  aria-expanded="true" href="<?= base_url('ekselensi/about')?>">EKSEleNSI</a>
                             <div class="dropdown-content dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;">
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">SEKILAS INFO</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">VISI DAN MISI</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">TATA NILAI BISNIS</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">STRUKTUR</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/visi_misi')?>">VISI DAN MISI</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/tata_nilai')?>">TATA NILAI BISNIS</a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/struktur')?>">STRUKTUR</a>
                             </div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('product/cart') ?>"><i class="fas fa-calculator" style="font-size: 20px;"></i></a></li>

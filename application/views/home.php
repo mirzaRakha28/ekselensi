@@ -136,7 +136,7 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Tentang Kami</h2>
-                <p class="text-center"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore ab sequi delectus. Consequatur eos similique, harum at laudantium eveniet asperiores, tenetur, quae quis dicta debitis illo voluptas nulla numquam!<br><br></p>
+                <p class="text-center"><br>Ekselensi Digital Printing adalah perusahaan yang bergerak di bidang digital printing dengan format besar/lebar dan kecil. Kami merupakan perusahaan yang menyediakan layanan digital printing 24 jam di Jakarta.<br><br></p>
             </div>
             <div class="buttons"><a class="btn btn-primary" role="button" href="<?= base_url('ekselensi/about') ?>">Selanjutnya</a></div>
         </div>
