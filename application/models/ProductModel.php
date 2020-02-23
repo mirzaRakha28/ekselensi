@@ -15,5 +15,16 @@
         {
             return $this->db->get_where("produk",["id"=>$product_Id])->row();
         }
+
+        public function getAsc()
+		{
+			$this->db->order_by('harga', 'asc');
+			return $this->db->get('produk')->result();
+		}
+		public function getDesc()
+		{
+			$this->db->order_by('harga', 'desc');
+			return $this->db->get('produk')->result();
+		}
     }
 ?>
