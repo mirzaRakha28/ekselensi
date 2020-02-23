@@ -7,7 +7,7 @@
             <h1>Tanpa Media</h1>
             <div>
                 <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(254,209,54);width: 111px;">Sort</button>
-                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="<?= base_url('product/sub_product/terendah') ?>">Terendah</a><a class="dropdown-item" role="presentation" href="<?= base_url('product/sub_product/tertinggi') ?>">Tertinggi</a></div>
                 </div>
             </div>
             <p></p>
