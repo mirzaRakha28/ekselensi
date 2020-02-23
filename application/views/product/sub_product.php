@@ -12,7 +12,7 @@
             </div>
             <p></p>
             
-            <?php foreach($produk as $brg) :?>
+            <?php $counter=0; foreach($produk as $brg) :?>
                 <div class="row no-gutters my-3" style="margin-bottom: 3px;">
                 <div class="col">
                     <div class="container border-warning shadow-lg flex-grow-1" style="height: auto;margin-bottom: 18px;max-height: auto;min-height: auto;"><img class="float-left" src="<?= base_url('').$brg->gambar ?>" style="width: auto;min-width: auto;max-width: auto;height: auto;min-height: auto;max-height: auto;">
@@ -21,15 +21,27 @@
                                 <h4 class="card-title" style="margin-bottom: 1px;color: rgb(248,129,18);"><?= $brg->nama_produk ?></h4>
                                 <p class="card-text">Deskripsi bahan backlight china outdoor<br><?= $brg->deskripsi ?><br></p>
                                 <p class="card-text"><strong>Harga </strong>: &nbsp;Rp<?= $brg->harga ?> per Meter Persegi<br></p>
-                                <a href="<?= base_url('product/product')?>"><button class="btn btn-primary border rounded" type="button" style="margin-right: 15px;">Lihat</button></a>
+                                
+                                <form action="<?= base_url('product/product')?>" method="post">
+                                    <input type="hidden" name="productId" value="<?= $produk[$counter]->id ?>">
+                                    <button class="btn btn-primary border rounded" type="submit" style="margin-right: 15px;">
+                                        Lihat
+                                    </button>
+                                </form>
+
                                 <a href="<?= base_url('product/product')?>">
-                                <button class="btn btn-primary border rounded" type="button"
-                                    style="background-color: rgb(245,111,25);"><i class="fa fa-plus"></i>&nbsp;Tambahakan</button></div>
-                                    </a>
+                                    <button class="btn btn-primary border rounded" type="button"
+                                        style="background-color: rgb(245,111,25);">
+                                        <i class="fa fa-plus"></i>
+                                        &nbsp;Tambahakan
+                                    </button>
                                 </div>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
+            <?php $counter++?>
             <?php endforeach?>
         </div>
     </div>
