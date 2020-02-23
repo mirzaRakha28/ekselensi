@@ -10,5 +10,10 @@
         {
             return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
         }
+
+        public function getProductByProductID($product_Id)
+        {
+            return $this->db->get_where("produk",["id"=>$product_Id])->row();
+        }
     }
 ?>
