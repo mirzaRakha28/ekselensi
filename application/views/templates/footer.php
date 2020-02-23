@@ -1,7 +1,7 @@
 <a href=
     "https://wa.me/62882210714854?text=
         <?= " Hello There !, I was interest to your product , Can you contact me ? because i wanna know more about yout product.^^" ?>" 
-        target="_blank" class="cd-top  cd-bottom--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);">
+        target="_blank" class="cd-top  cd-bottom--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png &quot;);background-size: contain;background-color: rgba(232,98,86,0);">
 </a>
 <footer>
         <footer id="#id">
@@ -32,7 +32,12 @@
                 <div class="col-md-4 footer-about">
                     <h4>About the company</h4>
                     <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
-                    <div class="social-links social-icons"><a href="https://id-id.facebook.com/ekselensi"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/ekselensi?lang=en"><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/user/1141683/videos"><i class="text-danger fa fa-youtube-play"></i></a><a href="https://www.instagram.com/xlnc_printing/?hl=en"><i class="fa fa-instagram"></i></a></div>
+                    <div class="social-links social-icons">
+                    <a href="https://id-id.facebook.com/ekselensi" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/ekselensi?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/1141683/videos" target="_blank"><i class="text-danger fa fa-youtube-play"></i></a>
+                    <a href="https://www.instagram.com/xlnc_printing/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
                 </div>
             </div>
         </footer>
