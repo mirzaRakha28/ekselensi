@@ -14,7 +14,7 @@
                 </div>
             </div>
             <p></p>
-            <span style="display:inline" id="statusAddProductToCart">
+            <span style="display:none" id="statusAddProductToCart">
                  <?= isset($statusAddProductToCart) ? $statusAddProductToCart : 'null'?> 
             </span>
             
