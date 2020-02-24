@@ -3,21 +3,21 @@
     class Sub_product extends CI_Controller{
 
         public function index(){ 
-            $data['statusAddProductToCart'] = $this->addToCart(); 
+            $data['statusAddProductToCart'] = $this->addToCart() == "success" ? "success" : ''; 
             $data['produk'] = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
         }
         public function terendah(){
-            $data['statusAddProductToCart'] = $this->addToCart(); 
+            $data['statusAddProductToCart'] = $this->addToCart() == "success" ? "success" : ''; 
             $data['produk'] = $this->ProductModel->getAsc(intval($_GET['k']),intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
         }
         public function tertinggi(){
-            $data['statusAddProductToCart'] = $this->addToCart(); 
+            $data['statusAddProductToCart'] = $this->addToCart() == "success" ? "success" : ''; 
             $data['produk'] = $this->ProductModel->getDesc(intval($_GET['k']),intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
@@ -27,7 +27,8 @@
 
         public function addToCart()
         {
-            if(isset($_POST['productIDToaddToCart']) && !empty($_POST['productIDToaddToCart'])){
+            // var_dump($_POST["productIDToaddToCart"]);die();
+            if(isset($_POST) && $_POST !== null && isset($_POST['productIDToaddToCart']) && !empty($_POST['productIDToaddToCart'])){
                 $product = $this->ProductModel->getProductByProductID($_POST['productIDToaddToCart']);
                 // var_dump($data);die();
                 if(!$this->checkInsideSession($product)){
@@ -38,12 +39,16 @@
                     } else {
                         array_push($_SESSION['cart'],$cart);
                     }
+                    unset($_POST); 
                     
-                    return "success";
+                    return 'success';
                 }else {
-                    return "success";
+                    unset($_POST);
+                    return 'success';
                 }
                 
+            } else {
+                return 'false';
             }
         }
 

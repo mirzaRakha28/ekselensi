@@ -2,7 +2,9 @@
     "https://wa.me/62882210714854?text=
         <?= " Hello There !, I was interest to your product , Can you contact me ? because i wanna know more about yout product.^^" ?>" 
         target="_blank" class="cd-top  cd-bottom--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png &quot;);background-size: contain;background-color: rgba(232,98,86,0);">
-</a>
+</a>   
+
+
 <footer>
         <footer id="#id">
             <div class="row">
@@ -51,7 +53,9 @@
     <script src="<?= base_url()?>assets/js/Swipe-Slider-7.js"></script>
     <script src="<?= base_url()?>assets/js/WOWSlider-about-us.js"></script>
     <script src="<?= base_url()?>assets/js/currency.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    
     
 </body>
 
