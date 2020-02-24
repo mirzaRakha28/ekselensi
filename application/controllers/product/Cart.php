@@ -15,11 +15,19 @@
                 }
             }
             
+            // var_dump($_SESSION["cart"]);die;
             $this->load->view('templates/header');
             $this->load->view('product/cart');
             $this->load->view('templates/footer');
         }
         // akhir methode index
+
+        public function index2()
+        {
+            unset($_SESSION['cart'][intval($_GET['indexProductToDel'])]);
+            // return redirect(base_url('product/cart'));
+            $this->index();
+        }
 
         // methode createObjectCart
         public function createObjectCart()
@@ -44,9 +52,11 @@
                 if($sessionToCheck == null){
                     return $check;
                 }
-                for($index=0;$index<count($sessionToCheck);$index++){
-                    if($_POST['nama_produk'] ===$sessionToCheck[$index]->nama_produk ){
-                        $sessionToCheck[$index]->quantity++;
+                foreach($sessionToCheck as $data){
+                    if($_POST['nama_produk'] === $data->nama_produk ){
+                        $oldQuantity = $data->quantity;
+                        $data->quantity+= intval($_POST['quantity']);
+                        $data->harga = intval($data->harga)/$oldQuantity * intval($data->quantity);
                         $check = true;
                         break;
                     }
@@ -68,6 +78,8 @@
         //     }
         // }
         // akhir method removeNullCart
+
+
 
     } 
     // akhir class Cart
