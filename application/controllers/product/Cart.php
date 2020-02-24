@@ -25,8 +25,7 @@
         public function index2()
         {
             unset($_SESSION['cart'][intval($_GET['indexProductToDel'])]);
-            // return redirect(base_url('product/cart'));
-            $this->index();
+            return redirect(base_url('product/cart'));
         }
 
         // methode createObjectCart

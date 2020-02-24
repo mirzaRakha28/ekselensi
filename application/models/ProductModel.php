@@ -16,15 +16,15 @@
             return $this->db->get_where("produk",["id"=>$product_Id])->row();
         }
 
-        public function getAsc()
+        public function getAsc($kategori=1,$subKategori=1)
 		{
 			$this->db->order_by('harga', 'asc');
-			return $this->db->get('produk')->result();
+			return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
 		}
-		public function getDesc()
+		public function getDesc($kategori=1,$subKategori=1)
 		{
 			$this->db->order_by('harga', 'desc');
-			return $this->db->get('produk')->result();
+			return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
 		}
     }
 ?>
