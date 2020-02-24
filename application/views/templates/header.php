@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Swipe-Slider-7.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Testimonial-Slider-9-1.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Testimonial-Slider-9.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <style>
         .dropbtn {
