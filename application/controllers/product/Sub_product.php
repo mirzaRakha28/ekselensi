@@ -10,13 +10,13 @@
             $this->load->view('templates/footer');
         }
         public function terendah(){
-            $data['produk'] = $this->ProductModel->getAsc();
+            $data['produk'] = $this->ProductModel->getAsc(intval($_GET['k']),intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
         }
         public function tertinggi(){
-            $data['produk'] = $this->ProductModel->getDesc();
+            $data['produk'] = $this->ProductModel->getDesc(intval($_GET['k']),intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');

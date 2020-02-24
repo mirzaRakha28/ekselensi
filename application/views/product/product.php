@@ -38,8 +38,15 @@
                     <p>Harga : &nbsp; Rp &nbsp;<span id="harga" ><?=  isset($data->harga)? number_format($data->harga,2,",",".") : 0  ?></span></p>
                     
                     <input id="hargaHidden" type="hidden" name="harga" value="<?=$data->harga?>">
-                    <h2 class="text-center text-success"><button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);"><i class="fa fa-plus"></i>&nbsp;Tambah ke Keranjang</button></h2>
+                    <h2 class="text-center text-success">
+                        <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
+                            <i class="fa fa-plus"></i>
+                            &nbsp;Tambah ke Keranjang
+                        </button>
+                    </h2>
+
                 </form>
+                
             </div>
         </div>
     </div>
