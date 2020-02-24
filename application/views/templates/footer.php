@@ -45,6 +45,8 @@
     <script src="<?= base_url()?>assets/js/Bold-BS4-Animated-Back-To-Top.js"></script>
     <script src="<?= base_url()?>assets/js/Swipe-Slider-7.js"></script>
     <script src="<?= base_url()?>assets/js/WOWSlider-about-us.js"></script>
+    <script src="<?= base_url()?>assets/js/currency.min.js"></script>
+    
 </body>
 
 </html>
