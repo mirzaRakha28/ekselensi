@@ -58,6 +58,37 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Swipe-Slider-7.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Testimonial-Slider-9-1.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Testimonial-Slider-9.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="<?= base_url()?>assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Articale-List-With-Image-Zoom.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Bold-BS4-Animated-Back-To-Top.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/dh-row-titile-text-image-right-1.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Good-login-dropdown-menu-1.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Good-login-dropdown-menu.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Job-management.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Swipe-Slider-7.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/User-Payment-Overview-Rows---Panel-Container.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/WhatsApp-Button.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/WOWSlider-about-us-1.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/WOWSlider-about-us-2.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Google-Style-Login.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/WOWSlider-about-us.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/Pretty-Footer.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <style>
