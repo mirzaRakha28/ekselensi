@@ -14,17 +14,12 @@
                 </div>
             </div>
             <p></p>
-            <span style="display:none" id="statusAddProductToCart">
-                 <?= isset($statusAddProductToCart) ? $statusAddProductToCart : 'null'?> 
-            </span>
+            <input type="hidden"  id="statusAddProductToCart" name="statusAddProductToCart" value="<?= isset($statusAddProductToCart) ? $statusAddProductToCart : ''?>">
+            
             
             <?php $counter=0; foreach($produk as $brg) :?>
 
-                <?php 
-                    // var_dump($_GET);die(); 
-                    ?>
-
-                <div class="row no-gutters my-3" style="margin-bottom: 3px;">
+            <div class="row no-gutters my-3" style="margin-bottom: 3px;">
                 <div class="col">
                     <div class="container border-warning shadow-lg flex-grow-1" style="height: auto;margin-bottom: 18px;max-height: auto;min-height: auto;"><img class="float-left" src="<?= base_url('').$brg->gambar ?>" style="width: auto;min-width: auto;max-width: auto;height: auto;min-height: auto;max-height: auto;">
                         <div class="card">
@@ -39,42 +34,64 @@
                                         Lihat
                                     </button>
                                 </form>
-
-                                <!-- <a href="<?= base_url('product/product')?>"> -->
-                                <form action="<?php 
+                                
+                                
+                                <form action="<?php  
                                     $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
- 
+
                                     $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
                                     echo $url; 
-                                
+
                                     ?>" method="post">
                                     <input type="hidden" name="productIDToaddToCart" value="<?= $brg->id?>">
                                     <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
                                         <i class="fa fa-plus"></i>
-                                        &nbsp;Tambahk ke Keranjang
+                                        &nbsp;Tambah ke Keranjang
                                     </button>
                                 </form>
-                                <!-- </a> -->
                             </div>
                     </div>
                 </div>
+            </div>
             </div>
             <?php $counter++?>
             <?php endforeach?>
         </div>
     </div>
 
+    
+
 
     <script>
+        // Swal.fire({
+        //         title   : 'Good job!',
+        //         text    :'Barang Berhasil DiTambahkan ke Keranjang',
+        //         icon    : 'success',
+        //         confirmButtonText:'<i class="fa fa-thumbs-up"></i> Lanjutkan Pilih Barang!',
+        //     })
         const statusAddProductToCart = document.querySelector('#statusAddProductToCart');
-        if(statusAddProductToCart.innerText == 'success'){
+        // console.log(statusAddProductToCart.value.length)
+        if(statusAddProductToCart.value == 'success'){
             Swal.fire({
                 title   : 'Good job!',
                 text    :'Barang Berhasil DiTambahkan ke Keranjang',
                 icon    : 'success',
                 confirmButtonText:'<i class="fa fa-thumbs-up"></i> Lanjutkan Pilih Barang!',
             })
-        } 
+            statusAddProductToCart.value = '';
+            console.log("berhasil")
+        } else if(statusAddProductToCart.value == 'redundan'){
+            Swal.fire({
+                title   : 'Redundant',
+                text    :'Barang sudah pernah ditambahkan',
+                icon    : 'warning',
+                confirmButtonText:'<i class="fa fa-thumbs-down"></i> Lanjutkan Pilih Barang!',
+            })
+            statusAddProductToCart.value = '';
+            console.log("berhasil")
+        }  
 
     </script>
+
+    
 

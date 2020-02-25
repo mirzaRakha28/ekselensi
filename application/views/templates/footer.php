@@ -2,8 +2,8 @@
     "https://wa.me/62882210714854?text=
         <?= " Hello There !, I was interest to your product , Can you contact me ? because i wanna know more about yout product.^^" ?>" 
         target="_blank" class="cd-top  cd-bottom--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png &quot;);background-size: contain;background-color: rgba(232,98,86,0);">
-</a> -->
 
+</a>    -->
 
 <a class="d-md-flex justify-content-end" id="wp1" target="_blank" style="font-size: 30px;margin-bottom: 54px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">       
         <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p><img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg"></a>
@@ -12,7 +12,10 @@
         <a class="d-md-flex justify-content-end" id="wp3" target="_blank" style="font-size: 30px;margin-bottom: 164px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">
         <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p><img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg"></a>
 
-        <a class="cd-top js-cd-top cd-top--fade-out cd-top--show" id="wa"  onClick = "myMove()" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);background-position: top;"></a>
+
+        <a class="cd-top  cd-bottom--fade-out cd-top--show" id="wa"  onClick = "myMove()" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);background-position: top;"></a>
+
+
 
 <footer>
         <footer id="#id">
@@ -53,6 +56,9 @@
             </div>
         </footer>
     </footer>
+
+
+    
     <script src="<?= base_url()?>assets/js/jquery.min.js"></script>
     <script src="<?= base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url()?>assets/js/bs-init.js"></script>
@@ -62,7 +68,9 @@
     <script src="<?= base_url()?>assets/js/Swipe-Slider-7.js"></script>
     <script src="<?= base_url()?>assets/js/WOWSlider-about-us.js"></script>
     <script src="<?= base_url()?>assets/js/currency.min.js"></script>
+
     <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         var wp1 = document.getElementById("wp1");
@@ -86,8 +94,6 @@
                 }
             }
             
-            
-
 
             }
             function myMove() {
@@ -108,6 +114,7 @@
                             wp3.style.bottom = pos + 'px'; 
                             }
                         }
+
     
                     }
                     else{
