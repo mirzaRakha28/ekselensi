@@ -34,14 +34,14 @@
                                         Lihat
                                     </button>
                                 </form>
-
                                 
-                                <form action="<?php 
+                                
+                                <form action="<?php  
                                     $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
- 
+
                                     $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
                                     echo $url; 
-                                
+
                                     ?>" method="post">
                                     <input type="hidden" name="productIDToaddToCart" value="<?= $brg->id?>">
                                     <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
@@ -49,7 +49,6 @@
                                         &nbsp;Tambah ke Keranjang
                                     </button>
                                 </form>
-                                <!-- </a> -->
                             </div>
                     </div>
                 </div>
@@ -79,7 +78,16 @@
                 icon    : 'success',
                 confirmButtonText:'<i class="fa fa-thumbs-up"></i> Lanjutkan Pilih Barang!',
             })
-            statusAddProductToCart.innerHTML = '';
+            statusAddProductToCart.value = '';
+            console.log("berhasil")
+        } else if(statusAddProductToCart.value == 'redundan'){
+            Swal.fire({
+                title   : 'Redundant',
+                text    :'Barang sudah pernah ditambahkan',
+                icon    : 'warning',
+                confirmButtonText:'<i class="fa fa-thumbs-down"></i> Lanjutkan Pilih Barang!',
+            })
+            statusAddProductToCart.value = '';
             console.log("berhasil")
         }  
 

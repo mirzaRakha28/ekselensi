@@ -1,16 +1,4 @@
-    
-    <?php
-        // if(isset($_GET['k'])){
-        //     setcookie('kategori',$_GET['k']);
-        //     // var_dump($_COOKIE['kategori']);die();
-        // }
 
-        // if(isset($_GET['sk'])){
-        //     setcookie('subKategori',$_GET['sk']);
-        // }
-
-        
-    ?>
 <!DOCTYPE html>
 <html>
 
