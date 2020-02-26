@@ -4,8 +4,8 @@
     </div>
     <div class="row" style="margin-top: 10px;margin-right: 20px;margin-left: 20px;">
         <div class="col" style="padding-left: 80px;padding-right: 80px;">
-            <h1><?= $subKategori->nama_subKategori?></h1>
-            <p><?= $subKategori->deskripsi?></p>
+            <h1><?= ucfirst($subKategori->nama_subKategori)?></h1>
+            <p><?= ucfirst($subKategori->deskripsi) ?></p>
             <div>
                 <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(254,209,54);width: 111px;">Sort</button>
                     <div class="dropdown-menu" role="menu">
@@ -24,8 +24,8 @@
                     <div class="container border-warning shadow-lg flex-grow-1" style="height: auto;margin-bottom: 18px;max-height: auto;min-height: auto;"><img class="float-left" src="<?= base_url('').$brg->gambar ?>" style="width: auto;min-width: auto;max-width: auto;height: auto;min-height: auto;max-height: auto;">
                         <div class="card">
                             <div class="card-body float-left" style="height: auto;min-height: auto;max-height: auto;">
-                                <h4 class="card-title" style="margin-bottom: 1px;color: rgb(248,129,18);"><?= $brg->nama_produk ?></h4>
-                                <p class="card-text">Deskripsi bahan backlight china outdoor<br><?= $brg->deskripsi ?><br></p>
+                                <h4 class="card-title" style="margin-bottom: 1px;color: rgb(248,129,18);"><?= ucfirst($brg->nama_produk) ?></h4>
+                                <p class="card-text">(Harus Segera diganti..)Deskripsi bahan backlight china outdoor<br><?= ucfirst($subKategori->deskripsi) ?><br></p>
                                 <p class="card-text"><strong>Harga </strong>: &nbsp; Rp. &nbsp;<?= number_format($brg->harga,2,",",".")?> per Meter Persegi<br></p>
                                 
                                 <div class="container">

@@ -6,8 +6,8 @@
     </div>
     <div class="row" style="margin-top: 36px;margin-right: 20px;margin-left: 20px;">
         <div class="col">
-            <h1><?= $kategori->nama_kategori ?></h1>
-            <p><?= $kategori->deskripsi;?></p>
+            <h1><?= ucfirst($kategori->nama_kategori) ?></h1>
+            <p><?= ucfirst($kategori->deskripsi);?></p>
         </div>
     </div>
     <div class="table-responsive" style="margin-top: 52px;margin-left: 20px;margin-right: 20px;width: 1074px;">
