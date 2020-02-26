@@ -4,7 +4,8 @@
     </div>
     <div class="row" style="margin-top: 10px;margin-right: 20px;margin-left: 20px;">
         <div class="col" style="padding-left: 80px;padding-right: 80px;">
-            <h1>Tanpa Media</h1>
+            <h1><?= $subKategori->nama_subKategori?></h1>
+            <p><?= $subKategori->deskripsi?></p>
             <div>
                 <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(254,209,54);width: 111px;">Sort</button>
                     <div class="dropdown-menu" role="menu">
@@ -93,12 +94,7 @@
 
 
     <script>
-        // Swal.fire({
-        //         title   : 'Good job!',
-        //         text    :'Barang Berhasil DiTambahkan ke Keranjang',
-        //         icon    : 'success',
-        //         confirmButtonText:'<i class="fa fa-thumbs-up"></i> Lanjutkan Pilih Barang!',
-        //     })
+       
         const statusAddProductToCart = document.querySelector('#statusAddProductToCart');
         // console.log(statusAddProductToCart.value.length)
         if(statusAddProductToCart.value == 'success'){
@@ -107,19 +103,22 @@
                 text    :'Barang Berhasil DiTambahkan ke Keranjang',
                 icon    : 'success',
                 confirmButtonText:'<i class="fa fa-thumbs-up"></i> Lanjutkan Pilih Barang!',
+            }).then(result=>{
+               
+                const badge = document.querySelector("#badge");
+                badge.className += " bounce-6"
+                console.log(badge,badge.className);
             })
             statusAddProductToCart.value = '';
-            console.log("berhasil")
+            // console.log("berhasil")
         } else if(statusAddProductToCart.value == 'redundan'){
-            Swal.fire({
-                title   : 'Redundant',
-                text    :'Barang sudah pernah ditambahkan',
-                icon    : 'warning',
-                confirmButtonText:'<i class="fa fa-thumbs-down"></i> Lanjutkan Pilih Barang!',
-            })
-            statusAddProductToCart.value = '';
-            console.log("berhasil")
+            
+
+          
         }  
+
+        
+
 
     </script>
 

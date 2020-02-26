@@ -7,7 +7,7 @@
     <div class="row" style="margin-top: 36px;margin-right: 20px;margin-left: 20px;">
         <div class="col">
             <h1><?= $kategori->nama_kategori ?></h1>
-            <p>Outdoor printing berguna untuk bahan bahan yang tahan dalam kondisi diluar lingkungan</p>
+            <p><?= $kategori->deskripsi;?></p>
         </div>
     </div>
     <div class="table-responsive" style="margin-top: 52px;margin-left: 20px;margin-right: 20px;width: 1074px;">
