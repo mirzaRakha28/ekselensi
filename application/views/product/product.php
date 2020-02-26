@@ -13,6 +13,8 @@
                 // var_dump($data);die(); 
                 ?>
                 <form action="<?=base_url('product/cart')?>" method="post">
+                    <!-- <?php var_dump($data); ?> -->
+                    <input type="hidden" name="id" value="<?=$data->id?>">
                     <input type="hidden" name="gambar" value="<?=$data->gambar?>">
                     <input type="hidden" name="nama_produk" value="<?=$data->nama_produk?>">
                     <input type="hidden" name="kategori" value="<?=intval($data->kategori_id)?>">
@@ -37,13 +39,49 @@
                     <p id="satuan" style="display:none"><?= $data->harga?></p>
                     <p>Harga : &nbsp; Rp &nbsp;<span id="harga" ><?=  isset($data->harga)? number_format($data->harga,2,",",".") : 0  ?></span></p>
                     
-                    <input id="hargaHidden" type="hidden" name="harga" value="<?=$data->harga?>">
-                    <h2 class="text-center text-success">
-                        <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
-                            <i class="fa fa-plus"></i>
-                            &nbsp;Tambah ke Keranjang
-                        </button>
-                    </h2>
+                    <input style="display:none;" id="hargaHidden" type="hidden" name="harga" value="<?=$data->harga?>">
+
+                    
+                    <!-- <div class="container"> -->
+                        <div class="row">
+                            <div class="col-sm-auto">
+                                <a href="<?=base_url('product/cart') ?>" class="btn btn-primary border rounded" >Periksa Keranjang</a>
+                            </div>
+                            
+                            <div class="col-sm-auto">
+                                <?php $status = false; ?>
+                                <?php if(isset($_SESSION['cart'])):  ?>  
+                                    <?php foreach ($_SESSION['cart'] as $key => $value) : ?>
+                                        
+                                       <?php if(intval($value->id) == intval($data->id)) : ?>
+                                            <?php $status = true; ?>
+                                            <span class="my-auto badge badge-success align-self-center"  style="margin-right: 15px;" >
+                                                <div>
+                                                    <i class=" material-icons" style="font-size: 2.5em;  ">
+                                                    check_circle_outline
+                                                    </i>
+                                                </div>
+                                            </span>
+                                       <?php endif ?>
+                                    <?php endforeach ?>
+                                <?php endif ?>
+                            </div>
+                            
+                            <div class="col-sm-auto">
+                                <?php if(!$status) : ?>
+                                    <h2 class="text-center text-success">
+                                        <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
+                                            <i class="fa fa-plus"></i>
+                                            &nbsp;Tambah ke Keranjang
+                                        </button>
+                                    </h2>
+                                <?php endif ?>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+
+                    
+                    
 
                 </form>
                 

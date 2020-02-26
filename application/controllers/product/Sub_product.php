@@ -1,4 +1,8 @@
 <?php
+    // awal class Data
+    class Data{
+    }
+    // akhir class Data
 
     class Sub_product extends CI_Controller{
         public function hello()
@@ -67,46 +71,13 @@
                 return 'false';
             }
 
-            /// coba pake get
-            // // var_dump($_POST["productIDToaddToCart"]);die();
-            // if(isset($_GET['productIDToaddToCart']) && !empty($_GET['productIDToaddToCart'])){
-            //     $product = $this->ProductModel->getProductByProductID($_GET['productIDToaddToCart']);
-            //     // var_dump($data);die();
-            //     if(!$this->checkInsideSession($product)){
-            //         $cart = $this->createObjectCart($product);
-            //         // bikin session dengan id cart dan isi dengan array of cart
-            //         if(!isset($_SESSION['cart'])){
-            //             $_SESSION['cart'] = array($cart);
-            //         } else {
-            //             array_push($_SESSION['cart'],$cart);
-            //         }
-            //         unset($_GET['productIDToaddToCart']); 
-            //         $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-
-            //         $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            //         var_dump( $_SERVER);die();
-            //         echo $url; die();
-
-                    
-            //         return 'success';
-            //     }else {
-            //         unset($_GET['productIDToaddToCart']);
-            //         $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-
-            //         $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            //         var_dump( $_SERVER);die();
-            //         echo $url; die();
-            //         return 'success';
-            //     }
-                
-            // } else {
-            //     return 'false';
-            // }
+            
         }
 
         public function createObjectCart($product)
         {   
             $cart = new Data();
+            $cart->id           = $product->id;
             $cart->gambar       = $product->gambar;
             $cart->nama_produk  = $product->nama_produk;
             $cart->kategori     = $product->kategori_id;
@@ -127,7 +98,7 @@
                     return $check;
                 }
                 foreach($sessionToCheck as $data){
-                    if($product->nama_produk === $data->nama_produk ){
+                    if($product->id === $data->id ){
                         $oldQuantity = $data->quantity;
                         $data->quantity++;
                         $data->harga = intval($data->harga)/$oldQuantity * intval($data->quantity);
@@ -144,10 +115,7 @@
 
     }
 
-    // awal class Data
-    class Data{
-    }
-    // akhir class Data
+    
 
 
 

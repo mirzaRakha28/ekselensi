@@ -18,7 +18,6 @@
             
             
             <?php $counter=0; foreach($produk as $brg) :?>
-
             <div class="row no-gutters my-3" style="margin-bottom: 3px;">
                 <div class="col">
                     <div class="container border-warning shadow-lg flex-grow-1" style="height: auto;margin-bottom: 18px;max-height: auto;min-height: auto;"><img class="float-left" src="<?= base_url('').$brg->gambar ?>" style="width: auto;min-width: auto;max-width: auto;height: auto;min-height: auto;max-height: auto;">
@@ -28,27 +27,58 @@
                                 <p class="card-text">Deskripsi bahan backlight china outdoor<br><?= $brg->deskripsi ?><br></p>
                                 <p class="card-text"><strong>Harga </strong>: &nbsp; Rp. &nbsp;<?= number_format($brg->harga,2,",",".")?> per Meter Persegi<br></p>
                                 
-                                <form action="<?= base_url('product/product')?>" method="post">
-                                    <input type="hidden" name="productId" value="<?= $brg->id ?>">
-                                    <button class="btn btn-primary border rounded" type="submit" style="margin-right: 15px;">
-                                        Lihat
-                                    </button>
-                                </form>
-                                
-                                
-                                <form action="<?php  
-                                    $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+                                <div class="container">
+                                    <div class="row no-gutters">
+                                    <div class="col-sm-auto">
 
-                                    $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                                    echo $url; 
+                                    <form action="<?= base_url('product/product')?>" method="post">
+                                        <input type="hidden" name="productId" value="<?= $brg->id ?>">
+                                        <button class="btn btn-primary border rounded" type="submit" style="margin-right: 15px;">
+                                            Lihat
+                                        </button>
+                                    </form>
 
-                                    ?>" method="post">
-                                    <input type="hidden" name="productIDToaddToCart" value="<?= $brg->id?>">
-                                    <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
-                                        <i class="fa fa-plus"></i>
-                                        &nbsp;Tambah ke Keranjang
-                                    </button>
-                                </form>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                    
+                                    <?php $isInCart = false; ?>
+                                    <?php if(isset($_SESSION['cart'])):  ?>
+                                        <?php foreach ($_SESSION['cart'] as $key => $value) : ?>
+                                            <?php if(intval($value->id) ==  intval($brg->id)): ?>
+                                                <span class="my-auto badge badge-success align-self-center"  style="margin-right: 15px;" >
+                                                        <div>
+                                                        <i class=" material-icons" style="font-size: 2.5em;  ">
+                                                        check_circle_outline
+                                                        </i>
+                                                        </div>
+                                                </span>
+                                                <?php $isInCart = true ?>
+                                            <?php endif ?>
+                                        <?php endforeach ?>
+                                    <?php endif ?>
+
+                                    </div>
+                                    <div class="col-sm-auto"></div>
+                                        <form action="<?php  
+                                            $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+
+                                            $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+                                            echo $url; 
+
+                                            ?>" method="post">
+                                            <fieldset  <?= $isInCart ? 'disabled' : ''?>>
+                                                    <input type="hidden" name="productIDToaddToCart" value="<?= $brg->id?>">
+                                                    <button class="btn btn-primary border rounded" type="submit" style="background-color: rgb(245,111,25);">
+                                                        <i class="fa fa-plus"></i>
+                                                        &nbsp;Tambah ke Keranjang
+                                                    </button>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+
+                                
                             </div>
                     </div>
                 </div>

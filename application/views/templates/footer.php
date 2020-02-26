@@ -5,16 +5,24 @@
 
 </a>    -->
 
-<a class="d-md-flex justify-content-end" id="wp1" target="_blank" style="font-size: 30px;margin-bottom: 54px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">       
-        <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p><img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg"></a>
-        <a class="d-md-flex justify-content-end" id="wp2" target="_blank" style="font-size: 30px;margin-bottom: 110px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">
-        <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p><img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg"></a>
-        <a class="d-md-flex justify-content-end" id="wp3" target="_blank" style="font-size: 30px;margin-bottom: 164px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">
-        <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p><img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg"></a>
+    <a class="d-md-flex justify-content-end" id="wp1" target="_blank" style="font-size: 30px;margin-bottom: 80px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">       
+        <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p>
+        <img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg">
+    </a>
+    <a class="d-md-flex justify-content-end" id="wp2" target="_blank" style="font-size: 30px;margin-bottom: 136px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">
+        <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p>
+        <img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg">
+    </a>
+    <a href="#" class="d-md-flex justify-content-end" id="wp3" target="_blank" style="font-size: 30px;margin-bottom: 190px;margin-right: -1px;width: 132px;height: 45px;background-color: rgb(25,230,21);">
+        <p style="font-size: 17px;margin-top: 9px;margin-right: 21px;font-family: Montserrat, sans-serif;">Sandi</p>
+        <img class="border rounded-circle" style="width: 45px;height: 45px;" src="<?= base_url()?>assets/img/team/2.jpg">
+    </a>
 
 
-        <a class="cd-top  cd-bottom--fade-out cd-top--show" id="wa"  onClick = "myMove()" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);background-position: top;"></a>
+    <div class="wp" id="wa"   onClick = "myMove()" >
+        <a class="cd-top  cd-bottom--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: cover;background-color: rgba(232,98,86,0);background-position: top;"></a>
 
+    </div>
 
 
 <footer>

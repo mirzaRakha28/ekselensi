@@ -1,5 +1,9 @@
 <?php
-
+    // awal class Data
+    class Data{
+    }
+    // akhir class Data
+    
     class Cart extends CI_Controller{
         // method index
         public function index(){
@@ -32,6 +36,7 @@
         public function createObjectCart()
         {   
             $cart = new Data();
+            $cart->id           = $_POST['id'];
             $cart->gambar       = $_POST['gambar'];
             $cart->nama_produk  = $_POST['nama_produk'];
             $cart->kategori     = $_POST['kategori'];
@@ -52,7 +57,7 @@
                     return $check;
                 }
                 foreach($sessionToCheck as $data){
-                    if($_POST['nama_produk'] === $data->nama_produk ){
+                    if(intval($_POST['id']) === intval($data->id) ){
                         $oldQuantity = $data->quantity;
                         $data->quantity+= intval($_POST['quantity']);
                         $data->harga = intval($data->harga)/$oldQuantity * intval($data->quantity);
@@ -83,8 +88,5 @@
     } 
     // akhir class Cart
 
-    // awal class Data
-    class Data{
-    }
-    // akhir class Data
+   
 ?>

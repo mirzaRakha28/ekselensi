@@ -77,6 +77,8 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Google-Style-Login.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/WOWSlider-about-us.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/Pretty-Footer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <style>
@@ -144,7 +146,20 @@
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/struktur')?>">STRUKTUR</a>
                             </div>
                         </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('product/cart') ?>"><i class="fas fa-calculator" style="font-size: 20px;"></i></a></li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="<?= base_url('product/cart') ?>">
+                                <span class="badge badge-light"><?php if(isset($_SESSION['cart'])) {  $banyakBarang = 0;
+                                    foreach ($_SESSION['cart'] as $index => $value) {
+                                        $banyakBarang ++;
+                                    } 
+                                    if($banyakBarang>0){
+                                        echo $banyakBarang;
+                                    }
+                                } ?></span>
+                                <i class="fas fa-calculator" style="font-size: 20px;"></i>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
         </div>
