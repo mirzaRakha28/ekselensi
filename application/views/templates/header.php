@@ -113,6 +113,21 @@
         .dropdown-content a:hover {background-color: #ddd;}
 
         .dropdown:hover .dropdown-content {display: block;}
+
+
+        .bounce-6 {
+        animation-name: bounce-6;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-6 {
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+    }
     </style>
 </head>
 
@@ -148,7 +163,7 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" href="<?= base_url('product/cart') ?>">
-                                <span class="badge badge-light"><?php if(isset($_SESSION['cart'])) {  $banyakBarang = 0;
+                                <span id="badge" class="badge badge-light"><?php if(isset($_SESSION['cart'])) {  $banyakBarang = 0;
                                     foreach ($_SESSION['cart'] as $index => $value) {
                                         $banyakBarang ++;
                                     } 

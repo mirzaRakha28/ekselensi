@@ -55,4 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['cart/deleteItemFromCart'] = 'cart/deleteItemFromCart';
 
 $route['/cart']     = 'cart/index';
+$route['admin']    = 'admin/Login/index';
 

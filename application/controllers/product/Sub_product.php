@@ -13,12 +13,15 @@
             if(!isset($_SESSION)){session_start();}
         }
 
+
         public function index(){ 
             $this->hello();
             $status = $this->addToCart();
             // var_dump($status);die();
             $data['statusAddProductToCart'] = $status != "false" ? $status : ''; 
-            $data['produk'] = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+           
+            $data['produk']     = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+            $data['subKategori'] =$this->SubCategoryModel->getSubCategory(intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
@@ -28,7 +31,8 @@
             $this->hello();
             $status = $this->addToCart();
             $data['statusAddProductToCart'] = $status != "false" ? $status : ''; 
-            $data['produk'] = $this->ProductModel->getAsc(intval($_GET['k']),intval($_GET['sk']));
+            $data['produk']     = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+            $data['subKategori'] =$this->SubCategoryModel->getSubCategory(intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
@@ -36,8 +40,8 @@
         public function tertinggi(){
             $this->hello();
             $status = $this->addToCart();
-            $data['statusAddProductToCart'] = $status != "false" ? $status : ''; 
-            $data['produk'] = $this->ProductModel->getDesc(intval($_GET['k']),intval($_GET['sk']));
+            $data['produk']     = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+            $data['subKategori'] =$this->SubCategoryModel->getSubCategory(intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
@@ -99,9 +103,9 @@
                 }
                 foreach($sessionToCheck as $data){
                     if($product->id === $data->id ){
-                        $oldQuantity = $data->quantity;
-                        $data->quantity++;
-                        $data->harga = intval($data->harga)/$oldQuantity * intval($data->quantity);
+                        // $oldQuantity = $data->quantity;
+                        // $data->quantity++;
+                        // $data->harga = intval($data->harga)/$oldQuantity * intval($data->quantity);
                         $check = true;
                         break;
                     }
