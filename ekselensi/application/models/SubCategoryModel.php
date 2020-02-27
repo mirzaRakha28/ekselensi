@@ -11,7 +11,7 @@ class SubCategoryModel extends CI_Model{
         return $this->db->get_where("subkategori",["id"=>$id])->row();
     }
 
-    public function editSubKategori($subkategori,$deskripsi)
+    public function editSubKategori($subkategori,$deskripsi,$image)
         {
             // $data = array(
             //     'kategori' => $kategori,
@@ -20,7 +20,7 @@ class SubCategoryModel extends CI_Model{
         
             $this->db->query(
                 "UPDATE `subkategori` 
-                SET `deskripsi` = '$deskripsi'
+                SET `deskripsi` = '$deskripsi', `image` = '$image'
                  WHERE `id` = $subkategori");
         }
 }

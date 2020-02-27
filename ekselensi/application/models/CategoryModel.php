@@ -8,16 +8,17 @@
         {
             return $this->db->get_where('kategori', 1)->result();
         }
-        public function editKategori($kategori,$deskripsi)
+        public function editKategori($kategori,$deskripsi,$image)
         {
             $data = array(
                 'kategori' => $kategori,
-                'deskripsi' => $deskripsi
+                'deskripsi' => $deskripsi,
+                'image' => $image
              );
         
             $this->db->query(
                 "UPDATE `kategori` 
-                SET `deskripsi` = '$deskripsi'
+                SET `deskripsi` = '$deskripsi', `image` = '$image'
                  WHERE `id` = $kategori");
         }
     }

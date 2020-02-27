@@ -9,7 +9,7 @@
                     </div>
                 </div>
             </div>
-            <form style="margin-right: 0px;margin-left: 46px;"enctype="multipart/form-data"action="<?= base_url('admin/form_sub_kategori/addSubKategori') ?>" method="post"><label>Judul SubKategori</label>
+            <form style="margin-right: 0px;margin-left: 46px;"enctype="multipart/form-data"action="<?= base_url('admin/form_sub_category/addSubKategori') ?>" method="post"><label>Judul SubKategori</label>
                     <div class="dropdown">
                         <select  name="kategori">
                             <option value="1">Tanpa Media</option>

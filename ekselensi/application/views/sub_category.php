@@ -47,7 +47,7 @@
                     <tr>
                     <td>'.$row->nama_subKategori.'</td>
                     <td>'.$row->deskripsi.'</td>
-                    <td>assets/img/banner_outdoor.png</td>
+                    <td>'.$row->image.'</td>
                     </tr>
                     ');
 
