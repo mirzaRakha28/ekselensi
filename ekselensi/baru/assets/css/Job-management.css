@@ -1,0 +1,46 @@
+.plat {
+  border-radius: 0px;
+}
+
+.title-bullet.title-bullet-table {
+  margin-top: 12px;
+}
+
+.img-rounded {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.results tr[visible='false'], .no-result {
+  display: none;
+}
+
+.title-bullet {
+  width: 100%;
+  height: 0px;
+  border-top: 1px solid #ddd;
+  display: block;
+  margin: 20px 0;
+}
+
+.title-bullet span {
+  width: 70px;
+  height: 6px;
+  display: table;
+  margin-top: -3px;
+  background: #048f83;
+}
+
+* {
+  /*box-sizing: inherit;*/
+}
+
+*:before, *:after {
+  /*box-sizing: inherit;*/
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+

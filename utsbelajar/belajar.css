@@ -1,0 +1,80 @@
+body{
+    background-image: url("sky");
+}
+
+#Judul{
+
+    background-color: dodgerblue;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+}
+.menu_utama{
+
+    width : 100%;
+    margin-top: 150px;
+    float: left;
+}
+#Gambar_besar{
+     
+    margin-right: 20px;
+    float : left;
+
+}
+#kotak_kanan{
+
+    margin-left: 10px;
+    width : 40%;
+    float: left;
+    height: 400px;
+    padding-top: 70px;
+    text-align: center;
+
+}
+.menu_kedua{
+    
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+}
+#berita{
+    text-align: left;
+    float : left;
+    font-size: 20px;
+}
+
+#panah{
+    margin-left: 5px;
+    width : auto;
+    float: left;
+    height: 400px;
+    text-align: center;
+
+}
+
+#doa{
+
+    float: left;
+    margin-left: 5px;
+    width : auto;
+    float: left;
+    height: 400px;
+    text-align: center;  
+}
+.form_1{
+    font-size: 30px;
+}
+
+div{
+
+    margin: 5px;
+
+}

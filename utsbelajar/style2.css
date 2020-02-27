@@ -1,0 +1,36 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+h1{
+    color: chartreuse;
+}
+
+.judul{
+
+    background-color: brown;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+#kotak1{
+
+    background-color: aqua;
+    float: left;
+    width: 60%;
+    height: 500px;
+    padding-right: 20px;
+    border: 10px gold solid;
+    
+}
+#kotak2{
+    background-color: blueviolet;
+    float: right;
+    width : 30%;
+    padding-left: 20px;
+    height: 500px;
+    border: 10px solid;
+}
