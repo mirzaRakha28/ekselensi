@@ -55,5 +55,11 @@
             $this->db->where('id',$id);
             $this->db->delete('produk');
         }
+
+        public function updateProductByID($id,$data)
+        {
+           $this->db->where('id',$id);
+           $this->db->update('produk',$data);
+        }
     }
 ?>
