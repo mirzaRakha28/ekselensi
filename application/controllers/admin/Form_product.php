@@ -20,7 +20,7 @@
             $deskripsi   = $_POST['deskripsi'];
             $satuan      = $_POST['satuan'];
             $minimum_quantity = intval($_POST['minimum_quantity']);
-            $kategori    = intval($_POST['keterangan']);
+            $kategori    = intval($_POST['kategori']) ;
             $subKategori = intval($_POST['subkategori']);
             $keterangan  = $_POST['keterangan'];
 

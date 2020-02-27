@@ -10,7 +10,21 @@
                 $_SESSION['alertOnce'] = true;
             } 
             $_SESSION['alertOnce'] = true;
-            $data['produk'] = $this->ProductModel->getAllProduct();
+
+            if(isset($_POST['keyword']) && !empty($_POST['keyword'])){
+                $data['produk'] = $this->ProductModel->getProductLike($_POST['keyword']);
+                // var_dump($data['produk']);die();
+            
+            }elseif(isset($_GET['k']) && !empty($_GET['k']) && isset($_GET['sk']) && !empty($_GET['sk'])){
+                $data['produk'] = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+            }elseif(isset($_GET['k']) && !empty($_GET['k'])){
+                $data['produk'] = $this->ProductModel->getProductByKategoriID(intval($_GET['k']));
+            }elseif (isset($_GET['sk']) && !empty($_GET['sk'])) {
+                $data['produk'] = $this->ProductModel->getProductBySubKategoriID(intval($_GET['sk']));
+            }else {
+                $data['produk'] = $this->ProductModel->getAllProduct();
+            }
+
             // var_dump($data['produk']);die();
             $this->load->view('templates/header_admin');
             $this->load->view('product',$data);
