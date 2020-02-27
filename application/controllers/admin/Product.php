@@ -17,6 +17,15 @@
             $this->load->view('templates/footer_admin');
         }
 
+        public function delete()
+        {
+            if(isset($_GET['id']) && !empty($_GET['id'])){
+                $this->ProductModel->deleteProductByID(intval($_GET['id']));
+                redirect(base_url('admin/product'));
+            }
+            redirect(base_url('admin/product'));
+        }
+
 
     }
 

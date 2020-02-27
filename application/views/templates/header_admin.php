@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?= base_url()?>assets_admin/css/Sidebar-Menu.css">
     <link rel="stylesheet" href="<?= base_url()?>assets_admin/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="<?= base_url()?>assets/fonts/ionicons.min.css">
     
 </head>
 <body>

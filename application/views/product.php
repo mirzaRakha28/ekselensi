@@ -42,6 +42,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>No.</th>
                     <th>Nama Produk</th>
                     <th>Harga</th>
                     <th>Deskripsi</th>
@@ -57,10 +58,11 @@
             <tbody>
                 
                 
-                <?php foreach ($produk as $key => $value) : ?>
+                <?php $counter=1; foreach ($produk as $key => $value) : ?>
                    
 
                     <tr>
+                        <td><?= $counter;  ?></td> <?php $counter++; ?>
                         <td><br><?= ucfirst($value->nama_produk) ?><br><br></td>
                         <td><br><?= $value->harga ?><br></td>
                         <td><br><?= ucfirst(substr($value->deskripsi,0,50)).'....' ?><br><br></td>
@@ -84,7 +86,7 @@
                                 break;
                                                                     
                             default:
-                               echo'default';
+                               echo'Outdoor';
                                 break;
                         } ?></td>
                         <td><?php switch (intval($value->subkategori_id)) {
@@ -114,7 +116,10 @@
 
                         <td><br><?= ucfirst($value->ket);?><br><br></td>
                         <td><img class="img-thumbnail" src="<?= base_url('').$value->gambar ?>" alt="gambar"></td>
-                        <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
+                        <td>
+                            <a href="<?= base_url('admin/product/update?id=').$value->id ?>" style="margin-right: 20px;"><i class="btn btn-success icon ion-android-create"></i></a>
+                            <a href="<?= base_url('admin/product/delete?id=').$value->id ?>" style="margin-right: 20px;"><i class="btn btn-danger icon ion-android-delete"></i></a>
+                            </td>
                     </tr>
 
                 <?php endforeach ?>
@@ -125,14 +130,14 @@
     </div>
 <script>
 
-    const alertOnce = document.querySelector("#alertOnce");
-    if(alertOnce.innerText == 'true'){
-        Swal.fire({
-                title   : 'Login Berhasil',
-                text    :'Email atau Password Salah!',
-                icon    : 'success',
-                confirmButtonText:'<i class="fa fa-thumbs-up"></i> Welcome!',
-            })
-    }
+    // const alertOnce = document.querySelector("#alertOnce");
+    // if(alertOnce.innerText == 'true'){
+    //     Swal.fire({
+    //             title   : 'Login Berhasil',
+    //             text    :'Email atau Password Salah!',
+    //             icon    : 'success',
+    //             confirmButtonText:'<i class="fa fa-thumbs-up"></i> Welcome!',
+    //         })
+    // }
 </script>
     

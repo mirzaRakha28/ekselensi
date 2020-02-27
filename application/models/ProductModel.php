@@ -31,6 +31,29 @@
 		{
 			$this->db->order_by('harga', 'desc');
 			return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
-		}
+        }
+        
+        public function addProduct($nama,$harga,$deskripsi, $satuan,$minimum_quantity,$kategori,$subKategori,$gambar,$keterangan)
+        {
+            $data = array(
+                'nama_produk' => $nama,
+                'deskripsi' => $deskripsi,
+                'harga' => $harga,
+                'minimum_quantity'=> $minimum_quantity,
+                'satuan' => $satuan,
+                'kategori_id'=> $kategori,
+                'subkategori_id'=> $subKategori,
+                'ket'=>$keterangan,
+                'gambar'=>$gambar
+             );
+        
+            $this->db->insert('produk', $data);
+        }
+
+        public function deleteProductById($id)
+        {
+            $this->db->where('id',$id);
+            $this->db->delete('produk');
+        }
     }
 ?>
