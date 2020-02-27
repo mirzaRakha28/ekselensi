@@ -9,7 +9,7 @@
                     <div class="col-md-12">
                         <div>   
                             <h1 style="margin-bottom: 68px;font-family: Montserrat, sans-serif;margin-left: 37px;"><strong>Produk</strong></h1>
-                            hello
+                        
                         </div>
                     </div>
                 </div>
@@ -55,18 +55,70 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><br>Flexy China 370 gram (tanpa sambung)<br><br></td>
-                    <td><br>65000<br></td>
-                    <td><br>Flexy China adalah bahan seperti terpal dengan ketebalan 270 /440 yang diimport dari Negara China. Bahan Flexy China ini adalah versi yang paling murah sehingga dapat bersaing di pasar cetak Digital Printing di Jakarta.<br><br></td>
-                    <td>1</td>
-                    <td>Meter Persegi</td>
-                    <td>Outdoor</td>
-                    <td>Tanpa Media</td>
-                    <td><br>Tidak bisa laminating<br><br></td>
-                    <td>/assets/img/felxy1.png</td>
-                    <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
-                </tr>
+                
+                
+                <?php foreach ($produk as $key => $value) : ?>
+                   
+
+                    <tr>
+                        <td><br><?= ucfirst($value->nama_produk) ?><br><br></td>
+                        <td><br><?= $value->harga ?><br></td>
+                        <td><br><?= ucfirst(substr($value->deskripsi,0,50)).'....' ?><br><br></td>
+                        <td><?= $value->minimum_quantity ?></td>
+                        <td><?= ucfirst($value->satuan) ?></td>
+                        <td><?php switch (intval($value->kategori_id)) {
+                            case 1:
+                                echo 'Outdoor';
+                                break;
+                            case 2:
+                                echo 'Indoor';
+                                break;
+                            case 3:
+                                echo 'Ecosolvent';
+                                break;
+                            case 4:
+                               echo 'Docuprint';
+                                break;
+                            case 5:
+                                echo'salah';
+                                break;
+                                                                    
+                            default:
+                               echo'default';
+                                break;
+                        } ?></td>
+                        <td><?php switch (intval($value->subkategori_id)) {
+                            case 1:
+                                echo 'Tanpa Media';
+                                break;
+                            case 2:
+                                echo 'Dengan Media';
+                                break;
+                            case 3:
+                                echo 'Paket Produk';
+                                break;
+                            case 4:
+                               echo 'Car Branding';
+                                break;
+                            case 5:
+                                echo'Kertas A3+';
+                                break;
+                            case 6:
+                                echo'Kartu Nama';
+                                break;
+                                                                    
+                            default:
+                               echo'default';
+                                break;
+                        } ?></td>
+
+                        <td><br><?= ucfirst($value->ket);?><br><br></td>
+                        <td><img class="img-thumbnail" src="<?= base_url('').$value->gambar ?>" alt="gambar"></td>
+                        <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
+                    </tr>
+
+                <?php endforeach ?>
+
             </tbody>
         </table>
     </div>

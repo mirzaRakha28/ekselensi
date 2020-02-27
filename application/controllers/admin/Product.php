@@ -9,8 +9,11 @@
             }elseif ($_SESSION['isAdminLogin'] && !isset($_SESSION['alertOnce'])) {
                 $_SESSION['alertOnce'] = true;
             } 
+
+            $data['produk'] = $this->ProductModel->getAllProduct();
+            // var_dump($data['produk']);die();
             $this->load->view('templates/header_admin');
-            $this->load->view('product');
+            $this->load->view('product',$data);
             $this->load->view('templates/footer_admin');
         }
 
