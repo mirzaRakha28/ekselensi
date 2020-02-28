@@ -31,13 +31,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <?php foreach($barang as $dt) : ?>
                         <tr>
-                            <td>Promo Akhir Tahun</td>
-                            <td>Nikmati promo akhir tahun ekselensi dengan mencetak 30% lebih murah&nbsp;<br></td>
-                            <td>https://www.goole.com</td>
-                            <td>/assets/img/felxy1.png</td>
+                            <td><?= $dt->title;?></td>
+                            <td><?= $dt->subtitle;?><br></td>
+                            <td><?= $dt->link;?></td>
+                            <td><?= $dt->gambar;?></td>
                             <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
                         </tr>
+                    <?php endforeach;?>
                     </tbody>
                 </table>
             </div>
