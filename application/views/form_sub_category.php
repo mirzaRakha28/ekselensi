@@ -9,11 +9,19 @@
                     </div>
                 </div>
             </div>
-            <form style="margin-right: 0px;margin-left: 46px;"><label>Judul Sub Kategori</label>
-                <div class="dropdown"><button class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="width: 185px;">Tanpa Media</button>
-                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                </div><label style="margin-top: 11px;">Deskripsi</label><input class="form-control" type="text" style="width: 363px;" inputmode="numeric"><label style="margin-right: 37px;margin-top: 19px;">Gambar Banner</label><input type="file"><button class="btn btn-primary btn-lg float-right d-xl-flex justify-content-xl-center align-items-xl-center"
-                    type="submit" style="margin-right: 138px;">Submit</button></form>
+            <form style="margin-right: 0px;margin-left: 46px;"enctype="multipart/form-data"action="<?= base_url('admin/form_sub_category/addSubKategori') ?>" method="post"><label>Judul SubKategori</label>
+                    <div class="dropdown">
+                        <select  name="kategori">
+                            <option value="1">Tanpa Media</option>
+                            <option value="2">Dengan Media</option>
+                            <option value="3">Paket Produk</option>
+                            <option value="4">Car Branding</option>
+                            <option value="5">Lembar A3+</option>
+                            <option value="6">Kartu Nama</option>
+                        </select>
+                    </div><label style="margin-top: 11px;">Deskripsi</label><textarea name ="deskripsi" class="form-control" style="width: 363px;" ></textarea><label style="margin-right: 37px;margin-top: 19px;">Gambar Banner</label>
+                    <input name ="gambar"type="file"><button class="btn btn-primary btn-lg float-right d-xl-flex justify-content-xl-center align-items-xl-center"
+                        type="submit" style="margin-right: 138px;">Submit</button></form>
         </div>
 
 
