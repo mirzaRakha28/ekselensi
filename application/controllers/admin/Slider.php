@@ -12,11 +12,12 @@
             $this->load->view('slider', $data);
             $this->load->view('templates/footer_admin');
         }
-        // public function delete(){
-        //     $data = $this->uri->segment(4);
-        //     $this->admin->slider->delete($data);
-        //     redirect('admin/slider');
-        // }
+        public function delete(){
+            $data = $this->uri->segment(4);
+            $this->load->model("SliderModel");
+            $this->SliderModel->delete($data);
+            redirect('admin/slider');
+        }
 
 
     }
