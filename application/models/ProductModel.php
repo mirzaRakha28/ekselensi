@@ -32,6 +32,16 @@
 			$this->db->order_by('harga', 'desc');
 			return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
         }
+
+        public function getProductByKategoriID($kategori=1)
+        {
+            return $this->db->get_where("produk",['kategori_id'=>$kategori])->result();
+        }
+
+        public function getProductBySubKategoriID($subKategori=1)
+        {
+            return $this->db->get_where("produk",['subkategori_id'=>$subKategori])->result();
+        }
         
         public function addProduct($nama,$harga,$deskripsi, $satuan,$minimum_quantity,$kategori,$subKategori,$gambar,$keterangan)
         {
@@ -54,6 +64,22 @@
         {
             $this->db->where('id',$id);
             $this->db->delete('produk');
+        }
+
+        public function updateProductByID($id,$data)
+        {
+           $this->db->where('id',$id);
+           $this->db->update('produk',$data);
+        }
+
+        public function getProductLike($keyword)
+        {
+            $this->db->like('nama_produk', $keyword); 
+            $this->db->or_like('deskripsi', $keyword);
+            $this->db->or_like('ket', $keyword);
+            // WHERE `title` LIKE '%match%' ESCAPE '!' OR  `body` LIKE '%match%' ESCAPE '!'
+            return $this->db->get("produk")->result();
+
         }
     }
 ?>

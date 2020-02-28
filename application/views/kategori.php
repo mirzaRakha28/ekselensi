@@ -16,14 +16,17 @@
                 <div class="col">
                     <div class="row">
                         <div class="col"><i class="fa fa-search" style="margin-left: 22px;"></i><input class="shadow-sm" type="search" style="margin-left: 9px;background-color: rgba(255,255,255,0);" placeholder="Pencarian"></div>
-                        <div class="col"><a href="<?= base_url('admin/form_kategori')?>"><i class="fa fa-plus-circle" style="margin-right: 10px;"></i>Edit Kategori</a></div>
+                        <div class="col"><a href="<?= base_url('admin/form_kategori')?>"><i class="fa fa-plus-circle" style="margin-right: 10px;"></i>Tambahkan Produk</a></div>
                     </div>
                     
                 </div>
                 <div class="col">
-                    <div class="row no-gutters justify-content-start" style="margin-bottom: 30px">
+                    <div class="row no-gutters justify-content-start">
                         <div class="col">
-                            <div style="margin-bottom: 20px;width: 200px;">
+                            <div class="dropdown" style="margin-bottom: 20px;width: 200px;"><button class="btn btn-primary dropdown-toggle border rounded-0" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 31px;padding: -6px;background-color: rgb(255,255,255);color: rgb(255,107,0);">Sort</button>
+                                <div
+                                    class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -32,30 +35,19 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Judul Kategori</th>
+                        <th>Judul Sub Kategori</th>
                         <th>Deskripsi</th>
                         <th>Gambar</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                <?php
-                
-                    foreach($kategori as $row){
-                        echo ('
-                        
-                        <tr>
-                        <td>'.$row->nama_kategori.'</td>
-                        <td>'.$row->deskripsi.'</td>
-                        <td>'.$row->image.'</td>
-                        </tr>
-                        ');
-
-                    }
-                
-                ?>
-                
-                    
+                    <tr>
+                        <td>Tanpa Media</td>
+                        <td>tanpa media memilkki xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                        <td>assets/img/banner_outdoor.png</td>
+                        <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

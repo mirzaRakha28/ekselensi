@@ -3,12 +3,12 @@
                 <div class="row" style="height: 66px;">
                     <div class="col-md-12">
                         <div>
-                            <h1 style="margin-bottom: 68px;font-family: Montserrat, sans-serif;margin-left: 37px;"><strong>Produk</strong></h1>
+                            <h1 style="margin-bottom: 68px;font-family: Montserrat, sans-serif;margin-left: 37px;"><strong>Tambah Produk</strong></h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <form action="<?= base_url('admin/form_product/addProduct') ?>" method="post" style="margin-right: 0px;margin-left: 46px;"  enctype="multipart/form-data">
+            <form enctype="multipart/form-data" action="<?= base_url('admin/form_product/addProduct') ?>" method="post" style="margin-right: 0px;margin-left: 46px;"  >
             <label>Nama Produk</label>
             <input placeholder="nama barang" name="nama_produk" class="form-control" type="text" style="width: 363px;" required>
             <label>Harga</label>
@@ -78,7 +78,7 @@
                         </div> -->
                     </div>
                 </div>
-                <input class="btn btn-light" name="gambar" type="file">
+                <input class="btn btn-light" name="gambar" type="file" >
                 <button class="btn btn-primary btn-lg float-right d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-right: 138px;">Submit</button>
             </form>
         </div>
