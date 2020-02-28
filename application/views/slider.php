@@ -44,4 +44,19 @@
                 </table>
             </div>
         </div>
+    <script>
+    $(document).ready(function(){
+        $('.delete_data').click(function(){
+            var id = $(this).attr("id");
+            if(confirm("delete ?")){
+                window.location="<?php echo base_url();?>admin/slider/delete/"+id;
+            }else{
+                return false;   
+            }
+        });
+    });
+    
+    </script>
+
+
         
