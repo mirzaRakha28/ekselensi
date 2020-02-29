@@ -21,10 +21,10 @@
             return $this->db->get_where("slide",["id"=>$product_Id])->row();
         }
 
-        public function updateKarirByID($id,$data)
+        public function updateSliderByID($id,$data)
         {
             $this->db->where('id',$id);
-           $this->db->update('slide',$data);
+            $this->db->update('slide',$data);
         }
     }
 ?>

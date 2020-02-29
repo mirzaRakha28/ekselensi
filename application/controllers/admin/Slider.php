@@ -20,9 +20,9 @@
 
         public function edit($id){
             
-            $data['slide']= $this->KarirModel->edit(intval($id));
+            $data['slide']= $this->SliderModel->edit(intval($id));
             $this->load->view('templates/header_admin');
-            $this->load->view('form_karir_update',$data);
+            $this->load->view('form_slider_update',$data);
             $this->load->view('templates/footer_admin');
         }
        
@@ -32,41 +32,36 @@
         {
             // var_dump($_POST);die();
 
-            // ambil data datanya
+        $title = $_POST['title'];
+        $subtitle  = $_POST['subtitle'];
+        $link   = $_POST['link'];
+        $id     = $_POST['id'];
+        // var_dump($id);
+        // die();
+        // $satuan      = $_POST['satuan'];
+        // $minimum_quantity = intval($_POST['minimum_quantity']);
+        // $kategori    = intval($_POST['keterangan']);
+        // $subKategori = intval($_POST['subkategori']);
+        $gambarLama  = $_POST['gambarLama'];
+        // $keterangan  = $_POST['keterangan'];
+        // $produk_id   = $_POST['id'];
 
-            $job = $_POST['job'];
-            $gaji       = $_POST['gaji'];
-            $jenis   = $_POST['jenis'];
-            $id     = $_POST['id'];
-            // $satuan      = $_POST['satuan'];
-            // $minimum_quantity = intval($_POST['minimum_quantity']);
-            // $kategori    = intval($_POST['keterangan']);
-            // $subKategori = intval($_POST['subkategori']);
-            // $gambarLama  = $_POST['gambarLama'];
-            // $keterangan  = $_POST['keterangan'];
-            // $produk_id   = $_POST['id'];
+            // update database
+            $data = array(
+                'title' => $title,
+                'subtitle' => $subtitle,
+                'link' => $link,
+                'gambar'=> $gambarLama
+                );
 
-            // if($_FILES['gambar']['error'] === 4){
-            //     $gambar = $gambarLama;
-            // }else {
-            //     $gambar = $this->upload();
+            $this->SliderModel->updateSliderByID($id,$data);
 
-                // update database
-                $data = array(
-                    'job' => $job,
-                    'gaji' => $gaji,
-                    'jenis' => $jenis
-                    
-                 );
-
-                $this->KarirModel->updateKarirByID($id,$data);
-
-                if($this->db->affected_rows()){
-                    redirect('admin/karir');
-                }
-                redirect('admin/karir');
-            
+            if($this->db->affected_rows()){
+                redirect('admin/slider');
+            }
+            redirect('admin/slider');
         }
+        
     }
 
 

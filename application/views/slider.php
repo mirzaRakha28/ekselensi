@@ -37,7 +37,7 @@
                             <td><?= $dt->subtitle;?><br></td>
                             <td><?= $dt->link;?></td>
                             <td><?= $dt->gambar;?></td>
-                            <td><a href="#" style="margin-right: 20px;">Edit</a>
+                            <td><a href="<?= site_url('admin/slider/edit/'.$dt->id);?>" style="margin-right: 20px;">Edit</a>
                             <a href="#" class="delete_data"  style="margin-right: 20px;" id="<?= $dt->id;?>">Delete</a></td>
                         </tr>
                     <?php endforeach;?>

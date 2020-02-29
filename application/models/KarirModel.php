@@ -24,7 +24,7 @@
         public function updateKarirByID($id,$data)
         {
             $this->db->where('id',$id);
-           $this->db->update('karir',$data);
+            $this->db->update('karir',$data);
         }
     }
 ?>

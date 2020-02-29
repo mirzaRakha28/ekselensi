@@ -9,6 +9,7 @@
                 </div>
             </div>
             <form style="margin-right: 0px;margin-left: 46px;" enctype= "multipart/form-data" action="<?=  base_url('admin/slider/update')?>" method="post">
+            <input type="hidden" name="id" value="<?= $slide->id;?>">
             <label>Title</label>
             <input class="form-control" type="text" name="title"style="width: 363px;" value="<?php echo $slide->title;?>"  required>
             <label>Sub-Title</label>
