@@ -81,4 +81,6 @@
                 <input class="btn btn-light" name="gambar" type="file" >
                 <button class="btn btn-primary btn-lg float-right d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-right: 138px;">Submit</button>
             </form>
+            <p style="margin-left : 46px; color: red; margin-top : 30px" >Notes : ukuran gambar dimensi width 450px x height 450px </p>
+
         </div>
