@@ -37,7 +37,8 @@
                             <td><?= $dt->subtitle;?><br></td>
                             <td><?= $dt->link;?></td>
                             <td><?= $dt->gambar;?></td>
-                            <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
+                            <td><a href="#" style="margin-right: 20px;">Edit</a>
+                            <a href="#" class="delete_data"  style="margin-right: 20px;" id="<?= $dt->id;?>">Delete</a></td>
                         </tr>
                     <?php endforeach;?>
                     </tbody>

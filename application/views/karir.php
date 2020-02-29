@@ -18,7 +18,7 @@
                 <div class="col">
                     <div class="row">
                         <div class="col"><i class="fa fa-search" style="margin-left: 22px;"></i><input class="shadow-sm" type="search" style="margin-left: 9px;background-color: rgba(255,255,255,0);" placeholder="Pencarian"></div>
-                        <div class="col"><a href="<?= base_url('admin/form_slider')?>"><i class="fa fa-plus-circle" style="margin-right: 10px;"></i>Tambahkan Pekerjaan</a></div>
+                        <div class="col"><a href="<?= base_url('admin/form_karir')?>"><i class="fa fa-plus-circle" style="margin-right: 10px;"></i>Tambahkan Pekerjaan</a></div>
                     </div>
                 </div>
                 <div class="col">
@@ -44,14 +44,30 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php foreach($kerja as $job) : ?>
                     <tr>
-                        <td>Web Designer</td>
-                        <td>65000<br></td>
-                        <td>22/2/2020</td>
-                        <td>Part Time</td>
-                        <td><a href="#" style="margin-right: 20px;">Edit</a><a href="#" style="margin-right: 20px;">Delete</a></td>
+                        <td><?= $job->job;?></td>
+                        <td><?= $job->gaji;?><br></td>
+                        <td><?= $job->tanggal;?></td>
+                        <td><?= $job->jenis;?></td>
+                        <td><a href="<?= site_url('admin/karir/edit/'.$job->id);?>"  style="margin-right: 20px;">Edit</a>
+                        <a href="#" class="delete_data"style="margin-right: 20px;"id="<?= $job->id;?>">Delete</a></td>
                     </tr>
+                <?php endforeach;?>
                 </tbody>
             </table>
         </div>
     </div>
+<script>
+    $(document).ready(function(){
+        $('.delete_data').click(function(){
+            var id = $(this).attr("id");
+            if(confirm("delete ?")){
+                window.location="<?php echo base_url();?>admin/karir/delete/"+id;
+            }else{
+                return false;   
+            }
+        });
+    });
+    
+    </script>

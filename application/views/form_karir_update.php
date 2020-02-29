@@ -10,7 +10,7 @@
             </div>
             <form style="margin-right: 0px;margin-left: 46px;"action="<?= base_url().'admin/form_karir/add_product'?>" method="post">
                 <label>Judul Pekerjaan</label>
-                <input class="form-control" type="text" style="width: 363px;" name="job">
+                <input class="form-control" type="text" style="width: 363px;" name="job" value="<?= $kerja->?>">
                 <label>Gaji</label>
                 <input class="form-control" type="text" style="width: 363px;" inputmode="numeric"name="gaji">
                 <label>Jenis Pekerjaan</label>
