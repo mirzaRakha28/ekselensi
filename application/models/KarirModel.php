@@ -1,30 +1,30 @@
 <?php
-    class SliderModel extends CI_Model{
+    class KarirModel extends CI_Model{
         public function tampil_data(){
-            return $this->db->get('slide');
+            return $this->db->get('karir');
         }
         public function add_data($data,$table){
             return $this->db->insert($table, $data);
         }
         public function delete($data){
-            $this->db->delete('slide',array('id'=>$data));
+            $this->db->delete('karir',array('id'=>$data));
 
         }
         public function edit($id){
-            $this->db->from('slide');
+            $this->db->from('karir');
             $this->db->where('id',$id);
             $query = $this->db->get();
             return $query->row();
         }
         public function getProductByProductID($product_Id)
         {
-            return $this->db->get_where("slide",["id"=>$product_Id])->row();
+            return $this->db->get_where("karir",["id"=>$product_Id])->row();
         }
 
-        public function updateSliderByID($id,$data)
+        public function updateKarirByID($id,$data)
         {
             $this->db->where('id',$id);
-            $this->db->update('slide',$data);
+            $this->db->update('karir',$data);
         }
     }
 ?>

@@ -8,13 +8,14 @@
                     </div>
                 </div>
             </div>
-            <form style="margin-right: 0px;margin-left: 46px;"action="<?= base_url().'admin/form_karir/add_product'?>" method="post">
+            <form style="margin-right: 0px;margin-left: 46px;"action="<?= base_url('admin/karir/update')?>" method="post">
+                <input type="hidden" name="id" value="<?= $kerja->id;?>">
                 <label>Judul Pekerjaan</label>
-                <input class="form-control" type="text" style="width: 363px;" name="job">
+                <input class="form-control" type="text" style="width: 363px;" name="job" value="<?php echo $kerja->job;?>" required>
                 <label>Gaji</label>
-                <input class="form-control" type="text" style="width: 363px;" inputmode="numeric"name="gaji">
+                <input class="form-control" type="number" style="width: 363px;" inputmode="numeric"name="gaji" value="<?= $kerja->gaji;?>" >
                 <label>Jenis Pekerjaan</label>
-                <input class="form-control" type="text" style="width: 363px;" inputmode="numeric" name="jenis">
+                <input class="form-control" type="text" style="width: 363px;" inputmode="numeric" name="jenis"value="<?= $kerja->jenis;?>">
                 <button class="btn btn-primary btn-lg float-right d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-right: 138px;">Submit</button>
             </form>
         </div>
