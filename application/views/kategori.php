@@ -34,7 +34,8 @@
                     <tr>
                         <th>Judul Kategori</th>
                         <th>Deskripsi</th>
-                        <th>Gambar</th>
+                        <th>Gambar Kecil</th>
+                        <th>Gambar Besar</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -45,9 +46,11 @@
                         echo ('
                         
                         <tr>
-                        <td>'.$row->nama_kategori.'</td>
+                        <td> <strong>'.ucfirst($row->nama_kategori).'</strong></td>
                         <td>'.$row->deskripsi.'</td>
-                        <td>'.$row->image.'</td>
+                        <td> <img class="img-thumbnail" style="max-width:150px;" src="'.base_url().$row->image.'" alt="gambar"></td>
+                        <td> <img class="img-thumbnail" style="max-width:150px;" src="'.base_url().$row->bigImage.'" alt="gambar"></td>
+                        
                         </tr>
                         ');
 

@@ -23,6 +23,7 @@
            
             $data['produk']     = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
             $data['subKategori'] =$this->SubCategoryModel->getSubCategory(intval($_GET['sk']));
+            $data['kategori'] =$this->CategoryModel->getCategory(intval($_GET['k']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
             $this->load->view('templates/footer');
@@ -32,7 +33,7 @@
             $this->hello();
             $status = $this->addToCart();
             $data['statusAddProductToCart'] = $status != "false" ? $status : ''; 
-            $data['produk']     = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+            $data['produk']     = $this->ProductModel->getLowestProduct(intval($_GET['k']),intval($_GET['sk']));
             $data['subKategori'] =$this->SubCategoryModel->getSubCategory(intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);
@@ -41,7 +42,7 @@
         public function tertinggi(){
             $this->hello();
             $status = $this->addToCart();
-            $data['produk']     = $this->ProductModel->getProduct(intval($_GET['k']),intval($_GET['sk']));
+            $data['produk']     = $this->ProductModel->getHighestProduct(intval($_GET['k']),intval($_GET['sk']));
             $data['subKategori'] =$this->SubCategoryModel->getSubCategory(intval($_GET['sk']));
             $this->load->view('templates/header');
             $this->load->view('product/Sub_product',$data);

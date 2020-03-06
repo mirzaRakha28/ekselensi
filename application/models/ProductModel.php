@@ -11,6 +11,18 @@
             return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
         }
 
+        public function getLowestProduct($kategori=1,$subKategori=1)
+        {
+            $this->db->order_by('harga', 'ASC');
+            return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
+        }
+        public function getHighestProduct($kategori=1,$subKategori=1)
+        {
+            $this->db->order_by('harga', 'DESC');
+            return $this->db->get_where("produk",['kategori_id'=>$kategori,'subkategori_id'=>$subKategori])->result();
+        }
+
+
         public function getAllProduct()
         {   
             return  $this->db->get("produk")->result();

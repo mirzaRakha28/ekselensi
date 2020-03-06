@@ -45,9 +45,10 @@
                     echo ('
                     
                     <tr>
-                    <td>'.$row->nama_subKategori.'</td>
+                    <td> <strong>'.strtoupper($row->nama_subKategori).'</strong></td>
                     <td>'.$row->deskripsi.'</td>
-                    <td>'.$row->image.'</td>
+                    <td> <img class="img-thumbnail" style="max-width:150px;" src="'.base_url().$row->image.'" alt="gambar"></td>
+                        
                     </tr>
                     ');
 

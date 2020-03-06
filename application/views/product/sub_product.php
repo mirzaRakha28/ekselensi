@@ -1,6 +1,55 @@
-<img src="<?= base_url()?>assets/img/test3.png" style="width: 1500;max-width: 100%;min-width: 100%;">
+<img src="<?= base_url().$kategori->bigImage?>" style="width: 1500;max-width: 100%;min-width: 100%;">
     <div style="height: 41px;margin-left: 104px;margin-bottom: 0px;margin-top: 10px;">
-        <p style="font-family: Montserrat, sans-serif;">Produk dan Jasa &gt; Outdoor Printing &gt; Tanpa Media</p>
+        <p class="font-weight-bolder" style="font-family: Montserrat, sans-serif;"> <a href="<?= base_url('product/product_jasa')?>">Produk dan Jasa</a> &gt; <a href="<?= base_url('product/more_product').'?k='.$_GET['k'] ?>">
+        <?php
+            switch ($_GET['k']) {
+                case 1:
+                    echo "Outdoor";
+                    break;
+                case 2:
+                    echo "Indoor";
+                    break;
+                case 3:
+                    echo "Ecosolvent";
+                    break;
+                case 4:
+                    echo "Docuprint";
+                    break;
+                
+                default:
+                  echo "Outdoor";
+                    break;
+            }
+        ?>
+        
+        </a> &gt; <a href="#">
+        <?php
+            switch ($_GET['sk']) {
+                case 1:
+                    echo "Tanpa Media";
+                    break;
+                case 2:
+                    echo "Dengan Media";
+                    break;
+                case 3:
+                    echo "Paket Produk";
+                    break;
+                case 4:
+                    echo "Car Branding";
+                    break;
+                case 5:
+                    echo "Kertas A3+";
+                    break;
+                case 6:
+                    echo "Kartu Nama";
+                    break;
+                default:
+                    echo "Tanpa Media";
+                    break;
+            }
+        ?>
+        
+        </a></p>
     </div>
     <div class="row" style="margin-top: 10px;margin-right: 20px;margin-left: 20px;">
         <div class="col" style="padding-left: 80px;padding-right: 80px;">

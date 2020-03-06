@@ -206,7 +206,7 @@
                         } ?></td>
 
                         <td><br><?= ucfirst($value->ket);?><br><br></td>
-                        <td><img class="img-thumbnail" src="<?= base_url('').$value->gambar ?>" alt="gambar"></td>
+                        <td><img class="img-thumbnail" style="max-width:150px;" src="<?= base_url('').$value->gambar ?>" alt="gambar"></td>
                         <td>
                             <a href="<?= base_url('admin/product/formUpdate?id=').$value->id ?>" style="margin-right: 20px;"><i class="btn btn-success icon ion-android-create"></i></a>
                             <a href="<?= base_url('admin/product/delete?id=').$value->id ?>" style="margin-right: 20px;"><i class="btn btn-danger icon ion-android-delete"></i></a>

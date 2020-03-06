@@ -50,8 +50,8 @@
                 echo `<script> alert(" gagal upload gambar") </script>`;
                 return false;
             } elseif ($ukuranFile <10240000) {
-                move_uploaded_file($tempName,$_SERVER['DOCUMENT_ROOT'].'/ekselensi/assets/img/'.$nama);
-                return 'assets/img/'.$nama;
+                move_uploaded_file($tempName,$_SERVER['DOCUMENT_ROOT'].'/ekselensi/assets/img/'.$nama.$fileExtensi);
+                return 'assets/img/'.$nama.$fileExtensi;
             }
 
         }
