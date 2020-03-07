@@ -1,7 +1,6 @@
 <img src="<?= base_url('') ?>assets/img/test3.png" style="max-width: auto;width: 1500px;min-width: 100%;">
-    <div class="card" style="height: 689px;padding-right: 20px;">
-        <div class="card-body border-primary" style="padding: 168px;width: 1184px;padding-top: 0px;padding-left: 147px;">
-            <div class="row" style="margin-top: 36px;margin-right: 0px;margin-left: 0px;">
+    <div class="container" style="padding-right: 30px;padding-left: 30px;">
+    <div class="row" style="margin-top: 36px;margin-right: 0px;margin-left: 0px;">
                 <div class="col" style="padding-left: 0px;padding-right: 0px;">
                     <h1>Karir</h1>
                     <p>PT Ekselensi Printing and Design membuka beberapa kesempatan kerja, diantaranya adalah sebagai berikut : &nbsp;<br><br></p>
@@ -33,24 +32,20 @@
                         <p class="text-muted" style="margin-bottom: 0px;"><?=$kerjaan->namaPerusahaan?></p>
                         <p class="text-muted" style="margin-bottom: 0px;"><i class="fa fa-map-marker" style="margin-right: 9px;"></i><?=$kerjaan->alamat?></p>
                     </div>
-                <!-- <div class="col-md-3 col-xl-2 offset-xl-1 text-right">
-                    <div class="btn-group" role="group"></div>
-                </div> -->
                 </div>
                 <hr>
             <?php endforeach ?>
 
-
-                <!-- <div class="row">
-                    <div class="col-md-12">
-                        <nav>
-                            <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                <li class="page-item active" style="color: #f15922;background-color: #f15922;"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div> -->
-        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item active" style="color: #f15922;background-color: #f15922;"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
     </div>
