@@ -52,7 +52,7 @@
                 <div class="clearfix"></div>
                 <div class="col-md-4 footer-about">
                     <h4>About the company</h4>
-                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+                    <p> Ekselensi Digital Printing adalah perusahaan yang bergerak di bidang digital printing dengan format besar/lebar dan kecil. Kami merupakan perusahaan yang menyediakan layanan digital printing 24 jam di Jakarta. </p>
                     <div class="social-links social-icons">
                     <a href="https://id-id.facebook.com/ekselensi" target="_blank"><i style="color : #0652DD;" class="fa fa-facebook"></i></a>
                     <a href="https://twitter.com/ekselensi?lang=en" target="_blank"><i style="color : #3498db;" class="fa fa-twitter"></i></a>
