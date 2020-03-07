@@ -12,18 +12,31 @@
         }
 
         public function add_product(){
-            var_dump($_POST);
-            $job = $this->input->post('job');
-            $jenis = $this->input->post('jenis');
-            $gaji = $this->input->post('gaji');
+            // var_dump($_POST);
+            // $job = $this->input->post('job');
+            // $jenis = $this->input->post('jenis');
+            // $gaji = $this->input->post('gaji');
+
+            $job            = $_POST['job'];
+            $deskripsi      = $_POST['deskripsi'];
+            $gajiTerendah   = $_POST['gajiTerendah'];
+            $gajiTertinggi  = $_POST['gajiTertinggi'];
+
+            $jenis          = $_POST['jenis'];
+            $namaPerusahaan = $_POST['namaPerusahaan'];
+            $alamat         = $_POST['alamat'];
             
             $data = array(
                 'job' => $job,
+                'deskripsi'=>$deskripsi,
                 'jenis' => $jenis,
-                'gaji' => $gaji
-            );
-            var_dump($gambar);
-            $this->SliderModel->add_data($data,'karir');
+                'gajiTerendah' =>$gajiTerendah,
+                'gajiTertinggi' => $gajiTertinggi,
+                'namaPerusahaan' => $namaPerusahaan,
+                'alamat' => $alamat
+             );
+            // var_dump($gambar);
+            $this->KarirModel->add_data($data,'karir');
             redirect('admin/karir');
 
 

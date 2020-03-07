@@ -10,6 +10,11 @@
             $this->db->delete('slide',array('id'=>$data));
 
         }
+
+        public function getSlides()
+        {
+            return $this->db->get('slide')->result();
+        }
         public function edit($id){
             $this->db->from('slide');
             $this->db->where('id',$id);

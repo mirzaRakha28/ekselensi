@@ -25,7 +25,7 @@
                         <tr>
                             <th>Title</th>
                             <th>Subtitle</th>
-                            <th>Link</th>
+                            <th>Link(produkID)</th>
                             <th>Gambar</th>
                             <th></th>
                         </tr>
@@ -36,7 +36,8 @@
                             <td><?= $dt->title;?></td>
                             <td><?= $dt->subtitle;?><br></td>
                             <td><?= $dt->link;?></td>
-                            <td><?= $dt->gambar;?></td>
+                            <td><img class="img-thumbnail" style="max-width:150px;" src="<?= base_url('assets/img/').$dt->gambar ?>" alt="gambar"></td>
+                            
                             <td><a href="<?= site_url('admin/slider/edit/'.$dt->id);?>" style="margin-right: 20px;">Edit</a>
                             <a href="#" class="delete_data"  style="margin-right: 20px;" id="<?= $dt->id;?>">Delete</a></td>
                         </tr>

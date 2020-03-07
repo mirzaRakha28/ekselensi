@@ -134,7 +134,9 @@
             <thead>
                 <tr>
                     <th>No.</th>
+                    
                     <th>Nama Produk</th>
+                    <th>ID Produk</th>
                     <th>Harga</th>
                     <th>Deskripsi</th>
                     <th>Kuantitas Min</th>
@@ -154,7 +156,9 @@
 
                     <tr>
                         <td><?= $counter;  ?></td> <?php $counter++; ?>
+                        
                         <td><br><?= ucfirst($value->nama_produk) ?><br><br></td>
+                        <td><?= $value->id ?></td>
                         <td><br><?= $value->harga ?><br></td>
                         <td><br><?= ucfirst(substr($value->deskripsi,0,50)).'....' ?><br><br></td>
                         <td><?= $value->minimum_quantity ?></td>

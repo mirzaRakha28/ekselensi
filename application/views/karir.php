@@ -37,9 +37,13 @@
                 <thead>
                     <tr>
                         <th>Judul Pekerjaan</th>
-                        <th>Gaji</th>
+                        <th>Deskripsi Pekerjaan</th>
                         <th>Tanggal Upload</th>
                         <th>Jenis Pekerjaan</th>
+                        <th>Gaji Terendah</th>
+                        <th>Gaji Tertinggi</th>
+                        <th>Nama Perusahaan</th>
+                        <th>Alamat Perusahaan</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -47,9 +51,13 @@
                 <?php foreach($kerja as $job) : ?>
                     <tr>
                         <td><?= $job->job;?></td>
-                        <td><?= $job->gaji;?><br></td>
+                        <td><?= ucfirst(substr($job->deskripsi,0,20)).'...'?></td>
                         <td><?= $job->tanggal;?></td>
                         <td><?= $job->jenis;?></td>
+                        <td>Rp. <?=number_format($job->gajiTerendah,2,",",".")?><br></td>
+                        <td>Rp. <?= number_format($job->gajiTertinggi,2,",",".")?><br></td>
+                        <td><?= $job->namaPerusahaan;?><br></td>
+                        <td><?= $job->alamat;?><br></td>
                         <td><a href="<?= site_url('admin/karir/edit/'.$job->id);?>"  style="margin-right: 20px;">Edit</a>
                         <a href="#" class="delete_data"style="margin-right: 20px;"id="<?= $job->id;?>">Delete</a></td>
                     </tr>

@@ -10,12 +10,32 @@
             </div>
             <form style="margin-right: 0px;margin-left: 46px;"action="<?= base_url('admin/karir/update')?>" method="post">
                 <input type="hidden" name="id" value="<?= $kerja->id;?>">
-                <label>Judul Pekerjaan</label>
+
+                <label class="font-weight-bold">Judul Pekerjaan : </label>
                 <input class="form-control" type="text" style="width: 363px;" name="job" value="<?php echo $kerja->job;?>" required>
-                <label>Gaji</label>
-                <input class="form-control" type="number" style="width: 363px;" inputmode="numeric"name="gaji" value="<?= $kerja->gaji;?>" >
-                <label>Jenis Pekerjaan</label>
-                <input class="form-control" type="text" style="width: 363px;" inputmode="numeric" name="jenis"value="<?= $kerja->jenis;?>">
+                
+                <label class="font-weight-bold">Deskripsi Pekerjaan</label>
+                <textarea name="deksripsi" style="width: 363px;"  class="form-control" id="deskripsi" cols="30" rows="5" required><?php echo $kerja->deskripsi;?></textarea>
+
+                <label class="font-weight-bold">Gaji Terendah : </label>
+                <input class="form-control" type="number" style="width: 363px;" inputmode="numeric"name="gajiTerendah" value="<?= $kerja->gajiTerendah;?>" >
+                
+                <label class="font-weight-bold">Gaji Tertinggi : </label>
+                <input class="form-control" type="number" style="width: 363px;" inputmode="numeric"name="gajiTertinggi" value="<?= $kerja->gajiTertinggi;?>" >
+                
+                <label class="font-weight-bold">Jenis Pekerjaan : </label>
+                <select  name="jenis" class="form-control" style="width: 363px;">
+                            <option value="FullTime">FullTime</option>
+                            <option value="PartTime">ParTime</option>
+                            <option value="Internship">Internship</option>
+                </select>
+
+                <label class="font-weight-bold">Nama Perusahaan : </label>
+                <input class="form-control" type="text" style="width: 363px;" inputmode="numeric" name="namaPerusahaan"value="<?= $kerja->namaPerusahaan;?>">
+                
+                <label class="font-weight-bold">Alamat : </label>
+                <input class="form-control" type="text" style="width: 363px;" inputmode="numeric" name="alamat"value="<?= $kerja->alamat;?>">
+                
                 <button class="btn btn-primary btn-lg float-right d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-right: 138px;">Submit</button>
             </form>
         </div>

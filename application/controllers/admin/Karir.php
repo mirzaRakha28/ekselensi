@@ -33,10 +33,15 @@
 
             // ambil data datanya
 
-            $job = $_POST['job'];
-            $gaji       = $_POST['gaji'];
-            $jenis   = $_POST['jenis'];
-            $id     = $_POST['id'];
+            $job            = $_POST['job'];
+            $deskripsi      = $_POST['deskripsi'];
+            $gajiTerendah   = $_POST['gajiTerendah'];
+            $gajiTertinggi  = $_POST['gajiTertinggi'];
+
+            $jenis          = $_POST['jenis'];
+            $id             = $_POST['id'];
+            $namaPerusahaan = $_POST['namaPerusahaan'];
+            $alamat         = $_POST['alamat'];
             // $satuan      = $_POST['satuan'];
             // $minimum_quantity = intval($_POST['minimum_quantity']);
             // $kategori    = intval($_POST['keterangan']);
@@ -53,9 +58,12 @@
                 // update database
                 $data = array(
                     'job' => $job,
-                    'gaji' => $gaji,
-                    'jenis' => $jenis
-                    
+                    'deskripsi'=>$deskripsi,
+                    'jenis' => $jenis,
+                    'gajiTerendah' =>$gajiTerendah,
+                    'gajiTertinggi' => $gajiTertinggi,
+                    'namaPerusahaan' => $namaPerusahaan,
+                    'alamat' => $alamat
                  );
 
                 $this->KarirModel->updateKarirByID($id,$data);

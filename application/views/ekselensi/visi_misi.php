@@ -18,10 +18,10 @@
                 </div>
                 <div class="col-md-8 abt-right" style="background-color: rgb(255,255,255);">
                     <h1 class="text-left d-inline text-center" style="color: rgb(0,0,0);margin-left: 39px;">Visi Dan Misi</h1>
-                    <p style="color: rgb(0,0,0);margin-bottom: -12px;padding-top: 5px;">
+                    <p class="my-2" style="color: rgb(0,0,0);margin-bottom: -12px;padding-top: 5px;">
                         <b>Visi Ekselensi</b><br>
                         Menjadi perusahaan yang memberi manfaat dan kontribusi positif sebanyak-banyaknya bagi seluruh organ perusahaan, klien, vendor dan masyarakat umum
-                        <b>Misi Ekselensi</b><br>
+                        <br><br><b>Misi Ekselensi</b><br>
                         -Menjadi perusahaan yang terbaik dan memimpin pasar dikawasan JABODETABEK <br>
                         -Memiliki personil yang kompeten dan berintegritas dengan pengetahuan dan pengalaman memadai <br>
                     </p>  

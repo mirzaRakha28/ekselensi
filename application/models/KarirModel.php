@@ -1,5 +1,10 @@
 <?php
     class KarirModel extends CI_Model{
+        public function getAllCareer()
+        {
+            return $this->db->get('karir')->result();
+        }
+        
         public function tampil_data(){
             return $this->db->get('karir');
         }

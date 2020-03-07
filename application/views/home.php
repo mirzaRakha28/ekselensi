@@ -3,60 +3,66 @@
 
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
-			<li data-target="#fw_al_001" data-slide-to="0" class="active"></li>
-			<li data-target="#fw_al_001" data-slide-to="1"></li>
-			<li data-target="#fw_al_001" data-slide-to="2"></li>
+        <?php for ($i=0; $i < count($slider); $i++) : ?>
+            <li data-target="#fw_al_001" data-slide-to="<?=$i?>" class="border border-primary <?= $i==0 ? 'active' : 'not' ?>"></li>
+        <?php endfor ?>
 		</ol>
 
 		<!-- Wrapper For Slides -->
 		<div class="carousel-inner" role="listbox">
 
-			<!-- First Slide -->
-			<div class="carousel-item active">
-
-				<!-- Slide Background -->
-				<img src="assets/img/car0.jpg" alt="fw_al_001_01">
-
-				<!-- Slide Text Layer -->
-				<div class="fw_al_001_slide">
-					<h3 data-animation="animated fadeInUp">HELLO WORLD</h3>
-					<h1 data-animation="animated fadeInUp">THIS IS A  SLIDER</h1>
-					<p data-animation="animated fadeInUp">lorem 2018, ipsum out of sapien, consequa</p>
-					<a href="#" data-animation="animated fadeInUp">iewx donecti</a>
-				</div>
-			</div>
-			<!-- End of Slide -->
+			<?php $counter =1; foreach ($slider as $slide) : ?>
+                <!-- First Slide -->
+                <div class="carousel-item <?php if($counter == 1){ echo 'active';} ?>">
+    
+                    <!-- Slide Background -->
+                    <img src="<?= base_url('assets/img/').$slide->gambar ?>" alt="fw_al_001_01">
+    
+                    <!-- Slide Text Layer -->
+                    <div class="fw_al_001_slide">
+                        <!-- <h3 data-animation="animated fadeInUp">HELLO WORLD</h3> -->
+                        <h1 data-animation="animated fadeInUp"><?= $slide->title ?></h1>
+                        <p data-animation="animated fadeInUp"><?= $slide->subtitle ?></p>
+                        <form action="<?=base_url('product/product')?>" method="post">
+                            <input type="hidden" name="productId" value="<?= intval($slide->link) > 0 ? intval($slide->link) : '#' ?>">
+                            <button type="submit" class="btn btn-outline-primary btn-lg rounded" data-animation="animated fadeInUp" <?= intval($slide->link)==0 ? 'disabled' : 'actived' ?>>Cek Promo</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+                <?php $counter++ ?>
+            <?php endforeach ?>
 
 			<!-- Second Slide -->
-			<div class="carousel-item">
+			<!-- <div class="carousel-item"> -->
 
 				<!-- Slide Background -->
-				<img src="assets/img/car1.jpg" alt="fw_al_001_02">
+				<!-- <img src="assets/img/car1.jpg" alt="fw_al_001_02"> -->
 
 				<!-- Slide Text Layer -->
-				<div class="fw_al_001_slide">
+				<!-- <div class="fw_al_001_slide">
 					<h3 data-animation="animated fadeInUp">wrisus 2018</h3>
 					<h1 data-animation="animated fadeInUp">dolor loborti eros</h1>
 					<p data-animation="animated fadeInUp">lorem 2018, ipsum out of sapien, consequa</p>
 					<a href="#" data-animation="animated fadeInUp">quamr rutrumt</a>
 				</div>
-			</div>
+			</div> -->
 			<!-- End of Slide -->
 
 			<!-- Third Slide -->
-			<div class="carousel-item">
+			<!-- <div class="carousel-item"> -->
 
 				<!-- Slide Background -->
-				<img src="assets/img/car2.jpg" alt="fw_al_001_03">
+				<!-- <img src="assets/img/car2.jpg" alt="fw_al_001_03"> -->
 
 				<!-- Slide Text Layer -->
-				<div class="fw_al_001_slide">
+				<!-- <div class="fw_al_001_slide">
 					<h3 data-animation="animated fadeInUp">wx erat</h3>
 					<h1 data-animation="animated fadeInUp">Aliquamaeuhw</h1>
 					<p data-animation="animated fadeInUp">lorem 2018, ipsum out of sapien, consequa</p>
 					<a href="#" data-animation="animated fadeInUp">felis zw</a>
 				</div>
-			</div>
+			</div> -->
 			<!-- End of Slide -->
 
 		</div><!-- End of Wrapper For Slides -->
