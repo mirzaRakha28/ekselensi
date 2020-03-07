@@ -74,33 +74,29 @@
     <div class="features-clean">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">Features</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <h2 class="text-center">Filosofi</h2>
+                <p class="text-center"> Filosofi Usaha</p>
             </div>
             <div class="row features">
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-map-marker icon"></i>
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-handshake-o icon"></i>
+                    <h3 class="name">Integritas</h3>
+                    <p class="description">Aktivitas usaha Ekselensi Printing and Design dilakukan berdasarkan prinsip “Satu Kata, Satu Perbuatan”, serta menjunjung tinggi kejujuran dan etika bisnis.</p>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
-                    <h3 class="name">Always available</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    <h3 class="name">Ketepatan Waktu</h3>
+                    <p class="description">Aktivitas usaha Ekselensi Printing and Design dilakukan sesuai janji dan tenggat waktu yang disepakati dengan klien.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
+                <div class="col-sm-6 col-lg-4 item"><i class="far fa-thumbs-up icon"></i>
                     <h3 class="name">Customizable</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    <p class="description">Aktivitas usaha Ekselensi Printing and Design diupayakan untuk menghasilkan kualitas cetakan terbaik guna memenuhi harapan dan tingkat kepuasan klien.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-leaf icon"></i>
-                    <h3 class="name">Organic</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                <div class="col-sm-6 col-lg-4 item">
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon"></i>
-                    <h3 class="name">Fast</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                <div class="col-sm-6 col-lg-4 item"><i class="far fa-smile-beam icon"></i>
+                    <h3 class="name">Keramahan</h3>
+                    <p class="description">Aktivitas usaha Ekselensi Printing and Design mengutamakan keramahan berinteraksi yang santun dan tulus.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon"></i>
-                    <h3 class="name">Mobile-first</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                <div class="col-sm-6 col-lg-4 item">
                 </div>
             </div>
         </div>
