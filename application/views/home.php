@@ -33,37 +33,7 @@
                 <?php $counter++ ?>
             <?php endforeach ?>
 
-			<!-- Second Slide -->
-			<!-- <div class="carousel-item"> -->
-
-				<!-- Slide Background -->
-				<!-- <img src="assets/img/car1.jpg" alt="fw_al_001_02"> -->
-
-				<!-- Slide Text Layer -->
-				<!-- <div class="fw_al_001_slide">
-					<h3 data-animation="animated fadeInUp">wrisus 2018</h3>
-					<h1 data-animation="animated fadeInUp">dolor loborti eros</h1>
-					<p data-animation="animated fadeInUp">lorem 2018, ipsum out of sapien, consequa</p>
-					<a href="#" data-animation="animated fadeInUp">quamr rutrumt</a>
-				</div>
-			</div> -->
-			<!-- End of Slide -->
-
-			<!-- Third Slide -->
-			<!-- <div class="carousel-item"> -->
-
-				<!-- Slide Background -->
-				<!-- <img src="assets/img/car2.jpg" alt="fw_al_001_03"> -->
-
-				<!-- Slide Text Layer -->
-				<!-- <div class="fw_al_001_slide">
-					<h3 data-animation="animated fadeInUp">wx erat</h3>
-					<h1 data-animation="animated fadeInUp">Aliquamaeuhw</h1>
-					<p data-animation="animated fadeInUp">lorem 2018, ipsum out of sapien, consequa</p>
-					<a href="#" data-animation="animated fadeInUp">felis zw</a>
-				</div>
-			</div> -->
-			<!-- End of Slide -->
+			
 
 		</div><!-- End of Wrapper For Slides -->
 
@@ -76,23 +46,20 @@
         <div class="container">
             <div class="row" style="margin-top: 74px;">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Services</h2>
-                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur</h3>
+                    <h2 class="text-uppercase section-heading">Layanan</h2>
+                    <h3 class="text-muted section-subheading">Layanan yang kami sediakan</h3>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
+                <div class="col-md-6"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fas fa-print fa-stack-1x fa-inverse"></i></span>
                     <h4 class="section-heading">Printing</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-laptop fa-stack-1x fa-inverse"></i></span>
+                <div class="col-md-6"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fas fa-pen-nib fa-stack-1x fa-inverse"></i></span>
                     <h4 class="section-heading">Design</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-lock fa-stack-1x fa-inverse"></i></span>
-                    <h4 class="section-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
+                
             </div>
         </div>
     </section>

@@ -29,7 +29,7 @@
 
         public function update()
         {
-            // var_dump($_POST);die();
+            
 
             // ambil data datanya
 
@@ -42,19 +42,7 @@
             $id             = $_POST['id'];
             $namaPerusahaan = $_POST['namaPerusahaan'];
             $alamat         = $_POST['alamat'];
-            // $satuan      = $_POST['satuan'];
-            // $minimum_quantity = intval($_POST['minimum_quantity']);
-            // $kategori    = intval($_POST['keterangan']);
-            // $subKategori = intval($_POST['subkategori']);
-            // $gambarLama  = $_POST['gambarLama'];
-            // $keterangan  = $_POST['keterangan'];
-            // $produk_id   = $_POST['id'];
-
-            // if($_FILES['gambar']['error'] === 4){
-            //     $gambar = $gambarLama;
-            // }else {
-            //     $gambar = $this->upload();
-
+            
                 // update database
                 $data = array(
                     'job' => $job,
