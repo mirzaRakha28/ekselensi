@@ -1,4 +1,4 @@
-<section id="services" style="padding-top: 56px;padding-bottom: 38px;"><!-- Paradise Slider -->
+<section id="services" style="padding-top: 0;padding-bottom: 38px;"><!-- Paradise Slider -->
 	<div id="fw_al_001" class="carousel slide ps_slide_y ps_indicators_y swipe_y ps_easeOutQuint" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2500">
 
 		<!-- Indicators -->

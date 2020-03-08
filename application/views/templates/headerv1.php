@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -79,10 +80,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
     <style>
         .dropbtn {
-        color: #ffffff;
-        /* padding: 16px; */
+        color: white;
+        padding: 16px;
         font-size: 16px;
         border: none;
         }
@@ -130,61 +132,64 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(&quot;<?= base_url('assets/img/graditen.png') ?>&quot;)">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="<?= base_url('')?>" style="font-family: Montserrat, sans-serif;color: rgba(255,255,255,0.9);font-size: 20px;width: 300px;">
-                <img src="<?= base_url()?>assets/img/ekselensinew.png" style="height: 49px;">
-            </a>
-            <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarMain" style="margin-right: 0px;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="color: rgb(241,89,34);background-color: rgb(241,89,34);background-image: url(<?= base_url('assets/img/graditen.png') ?>);height: 56px;padding: 29px;margin: 0;">
+        <div class="container">
+            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-
-            <div class="collapse navbar-collapse text-primary justify-content-end" id="navbarMain" style="color: rgb(255,255,255);font-family: Montserrat, sans-serif;margin-right: 18px;">
-                <ul class="nav navbar-nav text-uppercase">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link font-weight-bold" href="<?= base_url('') ?>" style="color: #ffffff;">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropbtn nav-link font-weight-bold text-light"  aria-expanded="false" href="<?= base_url('product/product_jasa') ?>" >Produk dan jasa</a>
-                        <div class=" dropdown-content dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1' ?>">ouTDOOR PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'2'  ?>">iNDOOR pRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'3'  ?>">eCOSOLVENT PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'4'  ?>">dOCUPRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">OFFSET PRINTING</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">DESIGN DAN MULTIMEDIA</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">MERCHANDISES</a>
-                        </div>
-                    </li>
-                    <li  class="nav-item" role="presentation">
-                        <a class="nav-link text-light font-weight-bold" href="<?= base_url('galeri/galeri')?>">GALERI</a>
-                    </li>
-                    <li  class="nav-item" role="presentation">
-                        <a class="nav-link text-light font-weight-bold" href="<?= base_url('karir/karir')?>">KARIR</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="dropbtn nav-link text-light font-weight-bold  "  aria-expanded="false" href="<?= base_url('ekselensi/about')?>">EKSEleNSI</a>
-                        <div class="dropdown-menu dropdown-content" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;">
+            <a href="<?= base_url('')?>">
+                 <img src="<?= base_url()?>assets/img/ekslen.png"  style="width: 127px;">
+            </a>
+                <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 937px;padding: 109px;margin: 0;height: 61px;padding-bottom: 0px;padding-top: 0px;">
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="<?= base_url('') ?>">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropbtn nav-link"  aria-expanded="false" href="<?= base_url('product/product_jasa') ?>">Produk dan jasa</a>
+                            <div class=" dropdown-content dropdown-menu dropdown-menu-left" role="menu" style="color: rgb(242,136,22);font-family: Montserrat, sans-serif;">
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1' ?>">ouTDOOR PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'2'  ?>">iNDOOR pRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'3'  ?>">eCOSOLVENT PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'4'  ?>">dOCUPRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">OFFSET PRINTING</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">DESIGN DAN MULTIMEDIA</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('product/more_product').'?k='.'1'  ?>">MERCHANDISES</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="<?= base_url('galeri/galeri')?>">GALERI</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="<?= base_url('karir/karir')?>">KARIR</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropbtn nav-link"  aria-expanded="true" href="<?= base_url('ekselensi/about')?>">EKSEleNSI</a>
+                            <div class="dropdown-content dropdown-menu" role="menu" style="font-family: Montserrat, sans-serif;font-size: 15px;">
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/about')?>">SEKILAS INFO</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/visi_misi')?>">VISI DAN MISI</a>
                             <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/tata_nilai')?>">TATA NILAI BISNIS</a>
-                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/struktur')?>">STRUKTUR</a>    
-                        </div>
-                    </li>
-                    <li style="color: #ffffff;" class="nav-item" role="presentation"></li>
-                </ul>
-            </div>
-            <a  class="nav-link font-weight-bold" href="<?= base_url('product/cart') ?>">
-                <span id="badge" class="badge badge-light"><?php if(isset($_SESSION['cart'])) {  $banyakBarang = 0;
-                    foreach ($_SESSION['cart'] as $index => $value) {
-                        $banyakBarang ++;
-                    } 
-                    if($banyakBarang>0){
-                        echo $banyakBarang;
-                    }
-                } ?></span>
-                <i class="fas fa-calculator text-light" style="font-size: 20px; "></i>
-            </a>
+                            <a class="dropdown-item" role="presentation" href="<?= base_url('ekselensi/struktur')?>">STRUKTUR</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="<?= base_url('product/cart') ?>">
+                                <span id="badge" class="badge badge-light"><?php if(isset($_SESSION['cart'])) {  $banyakBarang = 0;
+                                    foreach ($_SESSION['cart'] as $index => $value) {
+                                        $banyakBarang ++;
+                                    } 
+                                    if($banyakBarang>0){
+                                        echo $banyakBarang;
+                                    }
+                                } ?></span>
+                                <i class="fas fa-calculator" style="font-size: 20px;"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
         </div>
     </nav>
-    
+
+
+
+
