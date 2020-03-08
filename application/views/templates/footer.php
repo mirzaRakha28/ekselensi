@@ -46,7 +46,7 @@
                         <p class="footer-center-info email text-left">(021) 548 1672<br></p>
                     </div>
                     <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                        <p> <a href="#" target="_blank">marketing@ekselensi.co.id,<br></a></p>
+                        <p> <a href="mailto:marketing@ekselensi.co.id" target="_blank">marketing@ekselensi.co.id,<br></a></p>
                     </div>
                 </div>
                 <div class="clearfix"></div>

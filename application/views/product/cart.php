@@ -139,15 +139,6 @@
 
 
         for(let index=0;index < btnDeletes.length;index++){
-            // btnDeletes[index].addEventListener('click',event=>{
-            //     let selector = '#elm'+ btnDeletes[index].value
-            //     let elmToDel = document.querySelector(selector)
-            //     let hargaElmToDel = elmToDel.querySelector('#harga'+index)
-            //     let hargaToDel = parseInt(hargaElmToDel.innerText)>0 ? parseInt(hargaElmToDel.innerText): 0;
-            //     totalHarga.innerHTML = parseInt(totalHarga.innerText) - hargaToDel;
-            //     // elmToDel.remove();
-            // })
-
             const panjang   = document.querySelector('#panjang'+index)
             const lebar     = document.querySelector('#lebar'+index)
             const quantity  = document.querySelector('#quantity'+index)
