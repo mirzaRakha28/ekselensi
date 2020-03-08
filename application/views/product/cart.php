@@ -125,7 +125,7 @@
     <div class="card border-danger" style="margin-right: 50px;margin-left: 50px;">
         <div class="card-body">
             <h4 class="card-title">Disclaimer</h4>
-            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            <p class="card-text">harga dan waktu estimasi akan berubah sewaktu-waktu</p>
         </div>
     </div>
     <a href="https://wa.me/62882210714854" target="_blank" class="cd-top  cd-top--fade-out cd-top--show" style="background-image: url(&quot;<?= base_url()?>assets/img/wa.png&quot;);background-size: contain;background-color: rgba(232,98,86,0);"></a>
