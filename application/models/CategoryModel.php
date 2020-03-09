@@ -26,6 +26,12 @@
                 SET `deskripsi` = '$deskripsi', `image` = '$image', `bigImage` = '$bigImage'
                  WHERE `id` = $kategori");
         }
+        public function getGambar ($id){
+            $this->db->from('kategori');
+            $this->db->where('id',$id); 
+            $query = $this->db->get('');
+            return $query->row();
+        }
     }
 
 ?>

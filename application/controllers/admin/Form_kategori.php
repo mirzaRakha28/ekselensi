@@ -20,7 +20,9 @@
             // ambil semua data dari $_POST dan $_FILES;
             $kategori = $_POST['kategori'];
             $deskripsi  = $_POST['deskripsi'];
-
+            $data = $this->CategoryModel->getGambar($kategori);
+            unlink($data->image);
+            unlink($data->bigImage);
             $image = $this->upload($_FILES['gambar']);
              if(!$image){
                  echo `<script> alert(" gagal upload gambar") </script>`;

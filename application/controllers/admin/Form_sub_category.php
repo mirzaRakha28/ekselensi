@@ -18,15 +18,16 @@
             // ambil semua data dari $_POST dan $_FILES;
             $kategori = $_POST['kategori'];
             $deskripsi  = $_POST['deskripsi'];
-
+            $data = $this->SubCategoryModel->getGambar($kategori);
+            unlink($data->image);
             $image = $this->upload();
             if(!$image){
                  echo `<script> alert(" gagal upload gambar") </script>`;
             }
-
             $this->SubCategoryModel->editSubKategori($kategori,$deskripsi,$image);
 
             if($this->db->affected_rows()){
+            
                 echo `<script> alert(" Produk berhasil ditambahkan") </script>`;
 
                 redirect(base_url('admin/sub_category'));
