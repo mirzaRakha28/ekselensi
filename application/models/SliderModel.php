@@ -10,7 +10,12 @@
             $this->db->delete('slide',array('id'=>$data));
 
         }
-
+        public function getGambar ($id){
+            $this->db->from('slide');
+            $this->db->where('id',$id); 
+            $query = $this->db->get('');
+            return $query->row();
+        }
         public function getSlides()
         {
             return $this->db->get('slide')->result();
