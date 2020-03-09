@@ -14,7 +14,7 @@
         }
         public function delete(){
             $data = $this->uri->segment(4);
-            $del = $this->SliderModel->getGambar($data);
+            $del = $this->SliderModel->edit($data);
             $path='./assets/img/';
             unlink($path.$del->gambar) or die('failed deleting: ' . $path.$del->gambar);
 

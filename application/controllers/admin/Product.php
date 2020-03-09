@@ -34,6 +34,11 @@
         public function delete()
         {
             if(isset($_GET['id']) && !empty($_GET['id'])){
+                $del = $this->ProductModel->deleteImageById(intval($_GET['id']));
+                
+            die();
+                $path='./assets/img/';
+                unlink($path.$del->gambar) or die('failed deleting: ' . $path.$del->gambar);
                 $this->ProductModel->deleteProductByID(intval($_GET['id']));
                 redirect(base_url('admin/product'));
             }

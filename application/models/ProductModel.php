@@ -77,7 +77,12 @@
             $this->db->where('id',$id);
             $this->db->delete('produk');
         }
-
+        public function deleteImageById($data){
+            $this->db->from('produk');
+            $this->db->where('id',$data); 
+            $query = $this->db->get('');
+            return $query->row();
+        }
         public function updateProductByID($id,$data)
         {
            $this->db->where('id',$id);
