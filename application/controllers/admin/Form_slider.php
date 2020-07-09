@@ -10,6 +10,7 @@
             $this->load->view('templates/footer_admin');
         }
         public function add_product(){
+            die();
             var_dump($_POST);
             $title = $this->input->post('title');
             $subtitle = $this->input->post('subtitle');

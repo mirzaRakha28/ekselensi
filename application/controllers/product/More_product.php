@@ -4,7 +4,9 @@
 
         public function index(){
             if(isset($_GET['k'])){
+                die();
                 $_COOKIE['kategori'] = $_GET['k'];
+                
             }
             $data['kategori'] = $this->CategoryModel->getCategory(intval($_GET['k']));
             $data['subKategori'] = $this->SubCategoryModel->getAllSubCategory();
